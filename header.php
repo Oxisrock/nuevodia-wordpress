@@ -13,7 +13,21 @@
 					<img src="wp-content/themes/tema_prueba/img/loading.gif" width="200" alt="">
 			</div>
 	</div><!-- Preloader -->
+	<div class="news-ticker-wrap">
+		 <span class="ticker-title tt-u">Lo último</span>
+			<ul class="news-ticker">
+					<li><a href="#">En breve iniciaremos los avances</a></li>
+					<li><a href="#">Elías Jaua: El chavismo es una mayoría política y cultural en Venezuela</a></li>
+					<li><a href="#">Maduro se reunió con gobernadores opositores</a></li>
+					<li><a href="#">Panamá confirmó que reunión del Grupo de Lima se realizará este jueves</a></li>
+			</ul>
 
+			<div class="ticker-control">
+					<i class="ti-angle-left" id="prev-ticker"></i>
+					<i class="ti-angle-right" id="next-ticker"></i>
+			</div>
+
+	</div><!-- /.news-ticker-wrap -->
 		<header id="header" class="header sticky-header">
       <div class="mid-header">
           <div class="container">
