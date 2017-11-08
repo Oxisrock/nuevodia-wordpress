@@ -11,12 +11,20 @@ function apk_register_sidebars() {
     'name' => __('Sidebar principal','apk'),
     'id' => 'main_sidebar',
     'description' => __('Este es el sidebar principal','apk'),
-    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'before_widget' => '<div id="%1$s" class="single-sidebar %2$s">',
     'after_widget' => '</div>',
     'before_title' => '<h3 class="widget-title">',
     'after_title' => '</h3>'
   ));
 }
-
 add_action('widgets_init', 'apk_register_sidebars');
+
+add_action('wp_enqueue_scripts', 'apk_insertar_js');
+
+function apk_insertar_js() {
+  wp_register_script('miscript', get_template_directory_uri().'/js/main.js',
+   array('app'), '1', true);
+  wp_enqueue_script('miscript');
+}
+
 ?>

@@ -12,9 +12,8 @@
 			<div class='loader' >
 					<img src="wp-content/themes/tema_prueba/img/loading.gif" width="200" alt="">
 			</div>
-	</div><!-- Preloader --> -->
+	</div><!-- Preloader -->
 
-	<div id="global-container">
 		<header id="header" class="header sticky-header">
       <div class="mid-header">
           <div class="container">
@@ -45,7 +44,7 @@
 															<ul id="navi-menu">
 
 																	<li class="current_page_item"><a href="#index.html">Inicio</a></li>
-																	<li class="page_item"><a href="#regionales">Regionales</a>
+																	<li class="page_item"><a href="category/regionales/">Regionales</a>
 																			<ul>
 																					 <li><a href="#">Sucesos</a></li>
 																					 <li><a href="#">Política</a></li>
@@ -57,7 +56,7 @@
 																	<li><a href="#regionales">Nacionales</a></li>
 																	<li><a href="#fotomancheta">Internacionales</a></li>
 																	<li><a href="#fotomancheta">Opinión</a></li>
-																	<li><a href="#fotomancheta">Deportes</a></li>
+																	<li><a href="index.php/category/deportes">Deportes</a></li>
 																	<li><a href="#fotomancheta">Espectáculos</a></li>
 																	<li class="page_item"><a href="#noticias">Más</a>
 																			<ul>
@@ -86,6 +85,3 @@
 					</div>
 			</div><!-- /.mainmenu-wrap -->
 		</header><!-- /#main-header -->
-
-
-		<section id="global-content" class="cf">

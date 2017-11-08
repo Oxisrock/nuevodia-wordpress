@@ -1,4 +1,5 @@
-<aside id="sidebar">
+<aside id="sidebar" class="col-md-4 sm-padding">
+  <div class="sidebar-wrap">
 
   <!-- <div class="widget">
     <h3 class="widget-title">Widget de texto</h3>
@@ -10,12 +11,11 @@
     if (is_active_sidebar('main_sidebar')) {
       dynamic_sidebar('main_sidebar');
     }else { ?>
-      <div class="widget">
-        <h3 class="widget-title"><?php _e('Buscar', 'apk'); ?></h3>
+      <div class="single-sidebar">
+        <h3 class="fw-8 fz-18 tt-u mb-30"><?php _e('Buscar', 'apk'); ?></h3>
         <?php get_search_form(); ?>
       </div>
   <?php  }?>
-
-
-
+</div>
 </aside><!-- /#sidebar -->
+</div>
