@@ -2,7 +2,9 @@
 function apk_load_styles_scripts() {
   wp_register_style('theme_style', get_stylesheet_uri(), '', '1.0', 'all');// para registrar el css
   wp_enqueue_style('theme_style');
-  wp_enqueue_script( 'script1', get_template_directory_uri() . '/js/jquery-1.12.4.min.js', array ( 'jquery' ), 1.1, true);
+  wp_enqueue_script( 'script2', get_template_directory_uri() . '/js/bootstrap.min.js', array ( 'jquery' ), 1.1, true);
+  wp_enqueue_script( 'script3', get_template_directory_uri() . '/js/owl.carousel.min.js', array ( 'jquery' ), 1.1, true);
+  wp_enqueue_script( 'script4', get_template_directory_uri() . '/js/main-script.js', array ( 'jquery' ), 1.1, true);
 }
 add_action('wp_enqueue_scripts', 'apk_load_styles_scripts');
 

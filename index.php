@@ -1,4 +1,5 @@
 			<?php get_header(); ?>
+			<div class="container">
 			<div class="main-content mt-20 ov-hidden">
 					<div class="col-md-8 sm-padding">
 			<section id="main-content" class="main-wrapper mb-40">
@@ -26,5 +27,5 @@
 			</section><!-- /#main-content -->
 		</div>
 			<?php get_sidebar(); ?>
-
+		</div>
 			<?php get_footer(); ?>

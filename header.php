@@ -17,9 +17,9 @@
 		 <span class="ticker-title tt-u">Lo último</span>
 			<ul class="news-ticker">
 					<li><a href="#">En breve iniciaremos los avances</a></li>
-					<li><a href="#">Elías Jaua: El chavismo es una mayoría política y cultural en Venezuela</a></li>
+					<!-- <li><a href="#">Elías Jaua: El chavismo es una mayoría política y cultural en Venezuela</a></li>
 					<li><a href="#">Maduro se reunió con gobernadores opositores</a></li>
-					<li><a href="#">Panamá confirmó que reunión del Grupo de Lima se realizará este jueves</a></li>
+					<li><a href="#">Panamá confirmó que reunión del Grupo de Lima se realizará este jueves</a></li> -->
 			</ul>
 
 			<div class="ticker-control">
@@ -31,7 +31,7 @@
 		<header id="header" class="header sticky-header">
       <div class="mid-header">
           <div class="container">
-              <div class="site-branding full-left">
+              <div class="site-branding text-center">
 								<a href="#"><img src="wp-content/themes/tema_prueba/img/Logo.png" alt="NuevoDia"></a>
                   <div class="container">
                   <div class="col-xs-6 xs-padding xs-text-center">
