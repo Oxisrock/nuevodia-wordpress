@@ -23,8 +23,8 @@
 			</ul>
 
 			<div class="ticker-control">
-					<i class="ti-angle-left" id="prev-ticker"></i>
-					<i class="ti-angle-right" id="next-ticker"></i>
+					<i class="fa fa-chevron-left" id="prev-ticker"></i>
+					<i class="fa fa-chevron-right" id="next-ticker"></i>
 			</div>
 
 	</div><!-- /.news-ticker-wrap -->
@@ -39,10 +39,10 @@
                   </div>
                   <div class="col-xs-6 xs-padding">
                       <ul class="footer-social text-right xs-text-center">
-                          <li><a href="#"><i class="ti-facebook"></i></a></li>
-                          <li><a href="#"><i class="ti-twitter"></i></a></li>
-                          <li><a href="#"><i class="ti-instagram"></i></a></li>
-                          <li><a href="#"><i class="ti-youtube"></i></a></li>
+                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                       </ul>
                   </div>
               </div>
@@ -91,8 +91,8 @@
 									</div>
 									<div class="col-md-3 col-xs-6">
 											<form action="#" class="search-form">
-													<input type="text" placeholder="Buscar..">
-													<button class="submit" type="submit"><i class="ti-search"></i></button>
+													<input type="text" placeholder="Buscar...">
+													<button class="submit" type="submit"><i class="fa fa-search"></i></button>
 											</form>
 									</div>
 									<div class="mobile-menu"></div>
