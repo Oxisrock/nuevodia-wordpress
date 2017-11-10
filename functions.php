@@ -5,11 +5,9 @@ function apk_load_styles_scripts() {
   wp_enqueue_style('theme_style');
 
   //JS
-    // wp_enqueue_script( 'script5', get_template_directory_uri() . '/js/slick.js', array ( 'jquery' ), 1.1, true);
   wp_enqueue_script( 'script1', get_template_directory_uri() . '/js/bootstrap.min.js', array ( 'jquery' ), 1.1, true);
-  // wp_enqueue_script( 'script2', get_template_directory_uri() . '/js/owl.carousel.min.js', array ( 'jquery' ), 1.1, true);
   wp_enqueue_script( 'script3', get_template_directory_uri() . '/js/main-script.js', array ( 'jquery' ), 1.1, true);
-  // wp_enqueue_script( 'script4', get_template_directory_uri() . '/js/main.js', array ( 'jquery' ), 1.1, true);
+  wp_enqueue_script( 'script4', get_template_directory_uri() . '/js/main.js', array ( 'jquery' ), 1.1, true);
   wp_enqueue_script( 'script6', get_template_directory_uri() . '/js/slider_home.js', array ( 'jquery' ), 1.1, true);
   }
 add_action('wp_enqueue_scripts', 'apk_load_styles_scripts');

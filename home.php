@@ -1,17 +1,45 @@
 <?php get_header(); ?>
 <br>
 <div class="main-content mt-20 ov-hidden">
-  <div class="autoplay">
-    <?php query_posts('showposts=6'); ?>
-    <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
-  <div><?php the_post_thumbnail(); ?></div>
-  <?php endwhile; endif; ?>
-</div>
-<br>
   <div class="container">
+    <div class="autoplay">
+      <!-- <?php query_posts('showposts=5'); ?>
+      <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
+    <div><?php the_post_thumbnail(); ?></div>
+    <?php endwhile; endif; ?> -->
+    <?php // mostrar 1 post por cada categoria
+    $categories=get_categories('orderby=name&order=ASC');
+     foreach($categories as $category) {
+     $posts=get_posts('showposts=1&cat='. $category->term_id);
+     if ($posts) {
+      foreach($posts as $post) {
+       setup_postdata($post); ?>
+       <div><?php the_post_thumbnail(); ?></div>
+       <!-- <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p> -->
+      <?php
+      } // fin foreach posts
+     } // fin if
+    } // fin foreach categories
+    ?>
+
+  </div>
+  <br>
     <div class="col-md-8 sm-padding">
 <section id="main-content" class="main-wrapper mb-40">
-  <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
+<?php // mostrar 1 post por cada categoria
+$categories=get_categories('orderby=name&order=ASC');
+ foreach($categories as $category) {
+ $posts=get_posts('showposts=1&cat='. $category->term_id);
+ if ($posts) {
+  foreach($posts as $post) {
+   setup_postdata($post); ?>
+   <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
+  <?php
+  } // fin foreach posts
+ } // fin if
+} // fin foreach categories
+?>
+  <!-- <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
     <div class="news-block padding-15 bg-white bd-grey mb-40">
   <article class="post resume">
     <header class="post-title">
@@ -22,9 +50,9 @@
       <?php the_excerpt(); ?>
       <a href="<?php the_permalink(); ?>" class="readmore"><?php _e('Seguir Leyendo', 'apk');?> &rarr;</a>
     </div>
-  </article>	<!-- article -->
+  </article>
 </div>
-  <?php endwhile; endif; ?>
+  <?php endwhile; endif; ?> -->
   <?php if (get_next_posts_link() || get_previous_posts_link()): ?>
   <div class="posts-nav cf">
     <?php next_posts_link(__('&larr; Previos', 'apk')); ?>

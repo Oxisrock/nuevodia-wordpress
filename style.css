@@ -11,11 +11,7 @@ Tags: white, two-columns, responsive layout
 Text Domain: apk
 */
 
-@import url('css/themify-icons.css');
-
 @import url('css/animate.min.css');
-
-@import url('css/elegant-line-icons.css');
 
 @import url('css/bootstrap.min.css');
 
@@ -27,7 +23,9 @@ Text Domain: apk
 
 @import url('css/responsive.css');
 
-@import url('css/slider.css');
+@import url('css/slick.css');
+
+/*@import url('css/slider.css');*/
 
 .sp-widget-post-slider-section .slick-arrow {
   background-color: #ef8a27!important;

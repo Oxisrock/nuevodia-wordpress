@@ -16,15 +16,17 @@
 	<div class="news-ticker-wrap">
 		 <span class="ticker-title tt-u">Lo último</span>
 			<ul class="news-ticker">
-					<li><a href="#">En breve iniciaremos los avances</a></li>
+	      <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
+					<li class="news-div"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 					<!-- <li><a href="#">Elías Jaua: El chavismo es una mayoría política y cultural en Venezuela</a></li>
 					<li><a href="#">Maduro se reunió con gobernadores opositores</a></li>
 					<li><a href="#">Panamá confirmó que reunión del Grupo de Lima se realizará este jueves</a></li> -->
+					<?php endwhile; endif; ?>
 			</ul>
 
 			<div class="ticker-control">
-					<i class="fa fa-chevron-left" id="prev-ticker"></i>
-					<i class="fa fa-chevron-right" id="next-ticker"></i>
+					<div class="slick-prev1 slick-arrow"><i class="fa fa-chevron-left" id="prev-ticker"></i></div>
+					<div class="slick-next2 slick-arrow"><i class="fa fa-chevron-right" id="next-ticker"></i></div>
 			</div>
 
 	</div><!-- /.news-ticker-wrap -->
