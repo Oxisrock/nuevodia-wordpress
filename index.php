@@ -7,7 +7,7 @@
 					<div class="news-block padding-15 bg-white bd-grey mb-40">
 				<article class="post resume">
 					<header class="post-title">
-						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+						<h2 class="block-falcon mb-40"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						<small class="meta"><?php the_time( get_option('date_format') ); ?> &bull; <a href=""><?php the_category(', '); ?></a></small>
 					</header>
 					<div class="post-content">

@@ -24,4 +24,6 @@ function apk_register_sidebars() {
   ));
 }
 add_action('widgets_init', 'apk_register_sidebars');
+if ( function_exists( 'add_theme_support' ) )
+add_theme_support( 'post-thumbnails' );
 ?>
