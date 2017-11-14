@@ -2,6 +2,34 @@
 <br>
 <div class="main-content mt-20 ov-hidden">
   <div class="container">
+    <div class="owl-carousel theme">
+          <!-- <?php query_posts('showposts=5'); ?>
+          <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
+        <div><?php the_post_thumbnail(); ?></div>
+        <?php endwhile; endif; ?> -->
+        <?php // mostrar 1 post por cada categoria
+        $categories=get_categories('orderby=name&order=ASC');
+         foreach($categories as $category) {
+         $posts=get_posts('showposts=1&cat='. $category->term_id);
+         if ($posts) {
+          foreach($posts as $post) {
+           setup_postdata($post); ?>
+           <figure class="effect-marley">
+           <div><?php the_post_thumbnail(); ?></div>
+           <figcaption>
+               <h2 style="color: #fff;"><?php the_title(); ?></h2>
+               <p style="color: #fff;"><?php the_time( get_option('date_format') ); ?> ,| <?php the_time( get_option('time') ); ?> </p>
+           </figcaption>
+           </figure>
+
+           <!-- <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p> -->
+          <?php
+          } // fin foreach posts
+         } // fin if
+        } // fin foreach categories
+        ?>
+</div>
+
   <br>
      <div class="banner bg-white mb-10">
           <?php if ( function_exists( 'easingslider' ) ) { easingslider( 180 ); } ?>

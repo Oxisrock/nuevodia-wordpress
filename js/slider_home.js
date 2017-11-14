@@ -21,4 +21,15 @@ jQuery(document).ready(function () {
     prevArrow: jQuery('.slick-prev1'),
     nextArrow: jQuery('.slick-next2')
   });
+  jQuery('.owl-carousel').owlCarousel({
+    center: true,
+   items:1,
+   loop:true,
+   margin:10,
+   responsive:{
+       600:{
+           items:3
+       }
+     }
+});
 });

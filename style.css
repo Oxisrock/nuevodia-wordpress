@@ -31,6 +31,9 @@ Text Domain: apk
 
 @import url('css/custom.css');
 
+@import url('css/slider/owl.carousel.css');
+
+@import url('css/slider/owl.theme.default.css');
 .sp-widget-post-slider-section .slick-arrow {
   background-color: #ef8a27!important;
 }
@@ -155,7 +158,7 @@ Text Domain: apk
 .menu-menudesomos-container ul {
   background: #fff!important;
   display: block;
-  margin: 0 -15px!im;
+  margin: 0 -15px;
   margin-bottom: -15px;
 }
 /*<link rel="stylesheet" href="css/themify-icons.css">
