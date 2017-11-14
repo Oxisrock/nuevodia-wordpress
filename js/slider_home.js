@@ -3,11 +3,13 @@ jQuery(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
-    arrows: true,
+    autoplaySpeed: 2004000,
+    arrows: false,
     speed: 1000,
     prevArrow: "<div class=\'slick-prev\'><i class=\'fa fa-chevron-left\'></i></div>",
-    nextArrow: "<div class=\'slick-next\'><i class=\'fa fa-chevron-right\'></i></div>"
+    nextArrow: "<div class=\'slick-next\'><i class=\'fa fa-chevron-right\'></i></div>",
+    dots: false,
+
   });
   jQuery('.news-ticker').slick({
     slidesToShow: 1,

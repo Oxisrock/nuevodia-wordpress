@@ -12,7 +12,8 @@
 			<div class='loader' >
 					<img src="wp-content/themes/tema_prueba/img/loading.gif" width="200" alt="">
 			</div>
-	</div><!-- Preloader -->
+	</div> -->
+
 	<div class="news-ticker-wrap">
 		 <span class="ticker-title tt-u">Lo último</span>
 			<ul class="news-ticker">
@@ -39,15 +40,16 @@
                   <div class="col-xs-6 xs-padding xs-text-center">
                       <p class="no-margin fz-13 text-light"></p>
                   </div>
-                  <div class="col-xs-6 xs-padding">
-                      <ul class="footer-social text-right xs-text-center">
-                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                      </ul>
-                  </div>
-              </div>
+									<br>
+									<div class="col-xs-12 xs-padding">
+											<ul class="footer-social text-center xs-text-center">
+													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+													<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+											</ul>
+									</div><!-- /.site-branding -->
+
+              	</div>
               </div><!-- /.site-branding -->
 
           </div>

@@ -1,0 +1,152 @@
+.bd-espectaculos img {
+  width: 206px!important;
+  height: 192px!important;
+}
+
+.bd-ciencia img {
+  width: 206px!important;
+  height: 192px!important;
+}
+.bd-opinion img {
+  width: 206px!important;
+  height: 192px!important;
+}
+.sp-widget-post-slider-section .slick-arrow {
+  background-color: #ef8a27!important;
+}
+#text-3 {
+  border: 2px solid #ef2727!important;
+}
+#text-3 h3:before, .text-3 h3:before {
+  background: #ef2727!important;
+}
+#recent-posts-3 {
+  border: 2px solid #66238d!important;
+}
+#recent-posts-3 h3:before, .text-3 h3:before
+{
+  background: #66238d!important;
+}
+#sp_widget_post_slider-3 {
+  border: 2px solid #66238d!important;
+}
+#sp_widget_post_slider-3 h3:before, .text-3 h3:before {
+  background: #66238d!important;
+}
+#sp_widget_post_slider-3 .sp-widget-post-slider-section .slick-arrow
+{
+  background: #66238d!important;
+}
+#easingslider_widget-9 {
+  border: 2px solid #66238d!important;
+}
+#easingslider_widget-9 h3:before, .text-3 h3:before{
+  background: #66238d!important;
+}
+#easingslider_widget-9 .easingslider-buttons .easingslider-prev
+{
+  background: #66238d!important;
+  color: #fff!important;
+}
+#easingslider_widget-9 .easingslider-buttons .easingslider-next
+{
+  background: #66238d!important;
+  content: ">"!important;
+  color: #fff!important;
+}
+
+#text-4 {
+  border: 2px solid #ef8a27!important;
+}
+#email-subscribers-2 {
+  border: 2px solid #ef8a27!important;
+}
+#sp_widget_post_slider-4 {
+  border: 2px solid #3a7521!important;
+}
+#sp_widget_post_slider-4 h3:before, .text-3 h3:before
+{
+  background: #3a7521!important;
+}
+#sp_widget_post_slider-4 .sp-widget-post-slider-section .slick-arrow
+{
+  background: #3a7521!important;
+}
+.block-falcon:before {
+    background-color: #ef8a27;
+    content: '';
+    height: 10px;
+    width: 20%;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+.bd-falcon {
+  border: 2px solid #ef8a27;
+}
+.block-sucesos:before {
+    background-color: #555;
+    content: '';
+    height: 10px;
+    width: 20%;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+.bd-sucesos {
+  border: 2px solid #555;
+}
+.block-nacionales:before {
+    background-color: #8d2332;
+    content: '';
+    height: 10px;
+    width: 20%;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+.bd-nacionales {
+  border: 2px solid #8d2332;
+}
+.block-deportes:before {
+    background-color: #278fef;
+    content: '';
+    height: 10px;
+    width: 20%;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+.bd-deportes {
+  border: 2px solid #278fef;
+}
+.block-inter:before {
+    background-color: #3a7521;
+    content: '';
+    height: 10px;
+    width: 20%;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+.bd-inter {
+  border: 2px solid #3a7521;
+}
+#widget_sp_image-2 {
+  border: 2px solid #ef2730!important;
+}
+#widget_sp_image-2 h3:before, .text-3 h3:before
+{
+  background: #ef2730!important;
+}
+#sp_widget_post_slider-2 {
+  border: 2px solid #e3aa2f!important;
+}
+#sp_widget_post_slider-2 h3:before, .text-3 h3:before
+{
+  background: #e3aa2f!important;
+}
+
+.footer-social li a:hover {
+  background: #de7d1e!important;
+}

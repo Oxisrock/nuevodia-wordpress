@@ -25,11 +25,11 @@ Text Domain: apk
 
 @import url('css/slick.css');
 
-/*@import url('css/base.css');*/
+@import url('css/base.css');
 
 @import url('css/hovers.css');
 
-/*@import url('css/slider.css');*/
+@import url('css/custom.css');
 
 .sp-widget-post-slider-section .slick-arrow {
   background-color: #ef8a27!important;
@@ -57,15 +57,22 @@ Text Domain: apk
 {
   background: #66238d!important;
 }
-#sp_widget_post_slider-2 {
-  border: 2px solid #e3aa2f!important;
+#easingslider_widget-9 {
+  border: 2px solid #66238d!important;
 }
-#sp_widget_post_slider-2 h3:before, .text-3 h3:before{
-  background: #e3aa2f!important;
+#easingslider_widget-9 h3:before, .text-3 h3:before{
+  background: #66238d!important;
 }
-#sp_widget_post_slider-2 .sp-widget-post-slider-section .slick-arrow
+#easingslider_widget-9 .easingslider-buttons .easingslider-prev
 {
-  background: #e3aa2f!important;
+  background: #66238d!important;
+  color: #fff!important;
+}
+#easingslider_widget-9 .easingslider-buttons .easingslider-next
+{
+  background: #66238d!important;
+  content: ">"!important;
+  color: #fff!important;
 }
 
 #text-4 {
@@ -74,10 +81,14 @@ Text Domain: apk
 #email-subscribers-2 {
   border: 2px solid #ef8a27!important;
 }
-#text-5 {
+#sp_widget_post_slider-4 {
   border: 2px solid #3a7521!important;
 }
-#text-5 h3:before, .text-3 h3:before
+#sp_widget_post_slider-4 h3:before, .text-3 h3:before
+{
+  background: #3a7521!important;
+}
+#sp_widget_post_slider-4 .sp-widget-post-slider-section .slick-arrow
 {
   background: #3a7521!important;
 }
@@ -140,6 +151,12 @@ Text Domain: apk
 }
 .bd-inter {
   border: 2px solid #3a7521;
+}
+.menu-menudesomos-container ul {
+  background: #fff!important;
+  display: block;
+  margin: 0 -15px!im;
+  margin-bottom: -15px;
 }
 /*<link rel="stylesheet" href="css/themify-icons.css">
 <link rel="stylesheet" href="css/animate.min.css">

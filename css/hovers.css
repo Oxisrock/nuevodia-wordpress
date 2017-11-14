@@ -73,7 +73,6 @@
 }
 
 .grid figure h2 {
-	word-spacing: -0.15em;
 	font-weight: 400;
   	text-transform: none;
     color: #ffffff;
@@ -85,6 +84,23 @@
 }
 
 .grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure h3 {
+	word-spacing: -0.15em;
+	font-weight: 400;
+  	text-transform: none;
+    color: #ffffff;
+
+}
+
+.grid figure h3 span {
+	font-weight: 800;
+}
+
+.grid figure h3,
 .grid figure p {
 	margin: 0;
 }
@@ -176,7 +192,7 @@
 
 .grid-mini figure h2,
 .grid-mini figure p {
-	margin: 0;
+	margin: 5px;
 }
 
 .grid-mini figure p {
@@ -199,8 +215,16 @@ figure.effect-marley p {
 	right: 10px;
 	left: 10px;
 	padding: 5px 0;
+    font-weight: 600
 }
 
+figure.effect-marley h3,
+figure.effect-marley p {
+	position: absolute;
+	right: 10px;
+	left: 10px;
+	padding: 5px 0;
+}
 
 figure.effect-marley p {
 	bottom: 10px;
@@ -221,27 +245,40 @@ figure.effect-marley:hover h2 {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+figure.effect-marley h3 {
+	top: 25%;
+    font-size: initial;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
 
-figure.effect-marley h2::after {
+figure.effect-marley:hover h3 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-marley h3::after {
 	position: absolute;
 	top: 100%;
 	left: 0;
 	width: 80%;
 	height: 4px;
-	background: #fff;
+	background: #FFFFFF;
 	content: '';
 	-webkit-transform: translate3d(0,40px,0);
 	transform: translate3d(0,40px,0);
 }
 
-figure.effect-marley h2::after,
+figure.effect-marley h3::after,
 figure.effect-marley p {
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 }
 
-figure.effect-marley:hover h2::after,
+figure.effect-marley:hover h3::after,
 figure.effect-marley:hover p {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
@@ -260,8 +297,9 @@ figure.effect-marley-mini h2,
 figure.effect-marley-mini p {
 	position: absolute;
 	right: 10px;
-	left: 10px;
-	padding: 5px 0;
+	margin-left: 20px;
+	padding: 4px 0;
+    font-weight: 600;
 }
 
 
