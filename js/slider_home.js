@@ -23,13 +23,16 @@ jQuery(document).ready(function () {
   });
   jQuery('.owl-carousel').owlCarousel({
     center: true,
-   items:1,
-   loop:true,
-   margin:10,
-   responsive:{
-       600:{
-           items:3
-       }
-     }
+    items:2,
+    loop:true,
+    margin:10,
+    responsive:{
+        600:{
+            items:2
+        }
+    },
+   autoplay: true,
+   autoplayHoverPause:true,
+
 });
 });
