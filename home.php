@@ -2,67 +2,46 @@
 <br>
 <div class="main-content mt-20 ov-hidden">
   <div class="container">
-    <div class="owl-carousel theme">
-          <!-- <?php query_posts('showposts=5'); ?>
-          <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
-        <div><?php the_post_thumbnail(); ?></div>
-        <?php endwhile; endif; ?> -->
-        <?php // mostrar 1 post por cada categoria
-        $categories=get_categories('orderby=name&order=ASC');
-         foreach($categories as $category) {
-         $posts=get_posts('showposts=1&cat='. $category->term_id);
-         if ($posts) {
-          foreach($posts as $post) {
-           setup_postdata($post); ?>
-           <figure class="effect-marley">
-           <div><?php the_post_thumbnail(); ?></div>
-           <figcaption>
-               <h2 style="color: #fff;"><?php the_title(); ?></h2>
-               <p style="color: #fff;"><?php the_time( get_option('date_format') ); ?> ,| <?php the_time( get_option('time') ); ?> </p>
-           </figcaption>
-           </figure>
-
-           <!-- <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p> -->
-          <?php
-          } // fin foreach posts
-         } // fin if
-        } // fin foreach categories
-        ?>
+    <div class="owl-nav">
+      <a class="owl-next-btn" style="width: 20%;">
+      </a>
+      <a class="owl-prev-btn" style="width: 20%;">
+      </a>
+        <div class="owl-carousel">
+          <?php // mostrar 1 post por cada categoria
+          $categories=get_categories('orderby=name&order=ASC');
+          foreach($categories as $category) {
+            if ($category->term_id != 1) {
+          $posts=get_posts('showposts=1&cat='. $category->term_id);
+       if ($posts) {
+        foreach($posts as $post) {
+         setup_postdata($post); ?>
+        <a href="<?php the_permalink(); ?>">
+         <figure class="effect-marley">
+         <div><?php the_post_thumbnail(); ?></div>
+         <figcaption>
+           <p style="color: #000; font-size: 6em;"><?= $category->name ?></p>
+             <h2 style="color: #000;"><?php the_title(); ?></h2>
+             <p style="color: #000;"><?php the_time( get_option('date_format') ); ?> </p>
+         </figcaption>
+         </figure>
+       </a>
+         <!-- <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p> -->
+        <?php
+        } // fin foreach posts
+       } // fin if
+     } // id 1
+    } // fin foreach categories
+      ?>
 </div>
-
+</div>
+<!-- <div class="owl-nav"><div class="owl-prev-btn">prev</div><div class="owl-next-btn">next</div></div> -->
   <br>
      <div class="banner bg-white mb-10">
           <?php if ( function_exists( 'easingslider' ) ) { easingslider( 180 ); } ?>
       </div>
     <div class="col-md-8 sm-padding">
 <section id="main-content" class="main-wrapper mb-20">
-<!-- <?php // mostrar 1 post por cada categoria
-$categories=get_categories('orderby=name&order=ASC');
- foreach($categories as $category) {
- $posts=get_posts('showposts=1&cat='. $category->term_id);
- if ($posts) {
-  foreach($posts as $post) {
-   setup_postdata($post); ?>
-   <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
-  <?php
-  } // fin foreach posts
- } // fin if
-} // fin foreach categories
-?> -->
-  <!-- <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
-    <div class="news-block padding-15 bg-white bd-grey mb-20">
-  <article class="post resume">
-    <header class="post-title">
-      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-      <small class="meta"><?php the_time( get_option('date_format') ); ?> &bull; <a href=""><?php the_category(', '); ?></a></small>
-    </header>
-    <div class="post-content">
-      <?php the_excerpt(); ?>
-      <a href="<?php the_permalink(); ?>" class="readmore"><?php _e('Seguir Leyendo', 'apk');?> &rarr;</a>
-    </div>
-  </article>
-</div>
-  <?php endwhile; endif; ?> -->
   <div class="news-block padding-15 bg-white bd-falcon mb-20">
       <h2 class="block-falcon mb-20">FALCÓN</h2>
       <?php query_posts('category_name=falcon&showposts=4'); ?>

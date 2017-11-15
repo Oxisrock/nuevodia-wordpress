@@ -1,4 +1,4 @@
-jQuery(document).ready(function () {
+  jQuery(document).ready(function () {
   jQuery('.autoplay').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -21,18 +21,38 @@ jQuery(document).ready(function () {
     prevArrow: jQuery('.slick-prev1'),
     nextArrow: jQuery('.slick-next2')
   });
-  jQuery('.owl-carousel').owlCarousel({
+  jQuery(document).ready(function() {
+    var owl = jQuery('.owl-carousel');
+    owl.owlCarousel({
     center: true,
     items:2,
     loop:true,
-    margin:10,
+    margin:0,
+    navContainer: '.owl.nav',
     responsive:{
         600:{
             items:2
         }
     },
    autoplay: true,
-   autoplayHoverPause:true,
+   autoplayHoverPause: true,
+   autoplayTimeout: 4000,
+   autoHeight: true,
 
+});
+jQuery('.owl-next-btn').click(function() {
+  owl.trigger('next.owl.carousel');
+})
+jQuery('.owl-prev-btn').click(function() {
+  owl.trigger('prev.owl.carousel');
+})
+owl.on('mousewheel', '.owl-stage', function (e) {
+    if (e.deltaY>0) {
+        owl.trigger('next.owl');
+    } else {
+        owl.trigger('prev.owl');
+    }
+    e.preventDefault();
+});
 });
 });
