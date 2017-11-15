@@ -17,14 +17,14 @@
         foreach($posts as $post) {
          setup_postdata($post); ?>
         <a href="<?php the_permalink(); ?>">
-         <figure class="effect-marley">
+          <div class="carousel">
          <div><?php the_post_thumbnail(); ?></div>
-         <figcaption>
-           <p style="color: #000; font-size: 6em;"><?= $category->name ?></p>
-             <h2 style="color: #000;"><?php the_title(); ?></h2>
-             <p style="color: #000;"><?php the_time( get_option('date_format') ); ?> </p>
-         </figcaption>
-         </figure>
+           <!-- <p style="color: #000; font-size: 6em;"><?= $category->name ?></p> -->
+           <div class="picture-caption-fixed" style="background: #000;">
+             <h2><?php the_title(); ?></h2>
+           </div>
+             <!-- <p style="color: #000;"><?php the_time( get_option('date_format') ); ?> </p> -->
+           </div>
        </a>
          <!-- <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p> -->
         <?php
