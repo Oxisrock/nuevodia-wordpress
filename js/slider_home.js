@@ -29,12 +29,16 @@
     loop:true,
     margin:0,
     navContainer: '.owl.nav',
+    navSpeed: 4000,
     responsive:{
         600:{
-            items:2
+            items:2,
+            scrollPerPage: true,
+            autoplayHoverPause: true
         }
     },
    autoplay: true,
+   scrollPerPage: true,
    autoplayHoverPause: true,
    autoplayTimeout: 4000,
    autoHeight: true,

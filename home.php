@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <br>
-<div class="main-content mt-20 ov-hidden">
+<div class="main-content ov-hidden">
   <div class="container">
     <div class="owl-nav">
       <a class="owl-next-btn" style="width: 20%;">
