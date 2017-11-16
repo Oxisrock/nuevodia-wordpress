@@ -34,7 +34,7 @@
         600:{
             items:2,
             scrollPerPage: true,
-            autoplayHoverPause: true
+            autoplayHoverPause: true,
         }
     },
    autoplay: true,

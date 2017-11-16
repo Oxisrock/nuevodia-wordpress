@@ -35,7 +35,7 @@
       <div class="mid-header">
           <div class="container">
               <div class="site-branding text-center">
-								<a href="#"><img src="wp-content/themes/tema_prueba/img/Logo.png" alt="NuevoDia"></a>
+								<a href="/nuevodia/index.php"><img src="wp-content/themes/tema_prueba/img/Logo.png" alt="NuevoDia"></a>
                   <div class="container">
                   <div class="col-xs-6 xs-padding xs-text-center">
                       <p class="no-margin fz-13 text-light"></p>
@@ -61,44 +61,39 @@
 													<nav class="mainmenu">
 															<ul id="navi-menu">
 
-																	<li class="current_page_item"><a href="#index.html">Inicio</a></li>
-																	<li class="page_item"><a href="category/regionales/">Regionales</a>
+																	<li class="current_page_item"><a href="/nuevodia/">Inicio</a></li>
+																	<li class="page_item"><a href="/nuevodia/index.php/category/falcon/">Falcón</a>
 																			<ul>
-																					 <li><a href="#">Sucesos</a></li>
-																					 <li><a href="#">Política</a></li>
-																					 <li><a href="#">Economía</a></li>
-																					 <li><a href="#">Educación</a></li>
-																					 <li><a href="#">Salud</a></li>
+																					 <li><a href="/nuevodia/index.php/category/falcon/politica">Política</a></li>
+																					 <li><a href="/nuevodia/index.php/category/falcon/economia">Economía</a></li>
+																					 <li><a href="/nuevodia/index.php/category/falcon/educacion">Educación</a></li>
+																					 <li><a href="/nuevodia/index.php/category/falcon/salud">Salud</a></li>
+																					 <li><a href="/nuevodia/index.php/category/falcon/educacion">Comunidad</a></li>
+																					 <li><a href="/nuevodia/index.php/category/falcon/salud">Generales</a></li>
 																			</ul>
 																	</li>
-																	<li><a href="#regionales">Nacionales</a></li>
-																	<li><a href="#fotomancheta">Internacionales</a></li>
-																	<li><a href="#fotomancheta">Opinión</a></li>
-																	<li><a href="index.php/category/deportes">Deportes</a></li>
-																	<li><a href="#fotomancheta">Espectáculos</a></li>
+																	<li><a href="/nuevodia/index.php/category/sucesos">Sucesos</a></li>
+																	<li><a href="/nuevodia/index.php/category/nacionales">Nacionales</a></li>
+																	<li><a href="/nuevodia/index.php/category/internacionales">Internacionales</a></li>
+																	<li><a href="/nuevodia/index.php/category/opinion">Opinión</a></li>
+																	<li><a href="/nuevodia/index.php/category/deportes">Deportes</a></li>
+																	<li><a href="/nuevodia/index.php/category/espectaculos">Espectáculos</a></li>
+																	<li><a href="/nuevodia/index.php/category/naranja">Naranja</a>
 																	<li class="page_item"><a href="#noticias">Más</a>
 																			<ul>
-																					<li><a href="index.html">Ciencia y tecnología</a></li>
+																					<li><a href="/nuevodia/index.php/category/ciencia-y-tecnologia">Ciencia y tecnología</a></li>
 																					 <li><a href="index.html">Turismo</a></li>
 																					 <li><a href="index.html">Curiosidades</a></li>
 																					 <li><a href="index.html">Cultura</a></li>
 																					 <li><a href="index.html">Historias que transcienden</a></li>
 																			</ul>
 																	</li>
-
-																	<li><a href="#naranja">Naranja</a>
-
 																	</li>
 															</ul>
 													</nav>
 											</div>
 									</div>
-									<div class="col-md-3 col-xs-6">
-											<form action="#" class="search-form">
-													<input type="text" placeholder="Buscar...">
-													<button class="submit" type="submit"><i class="fa fa-search"></i></button>
-											</form>
-									</div>
+									<?php get_search_form(); ?>
 									<div class="mobile-menu"></div>
 					</div>
 			</div><!-- /.mainmenu-wrap -->

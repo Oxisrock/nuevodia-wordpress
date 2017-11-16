@@ -194,7 +194,9 @@
 {
   background: #e3aa2f!important;
 }
-
+.footer-social li a {
+  width: 2em!important;
+}
 .footer-social li a:hover {
   background: #de7d1e!important;
 }
@@ -280,4 +282,11 @@ line-height: 28px!important;
 .picture-caption-fixed h2 {
   opacity: 1!important;
   text-align: center;
+}
+figure.effect-marley h3 {
+  top: 18%!important;
+  font-size: 0.7em!important;
+}
+.mainmenu li a {
+  padding: 18px 0.8em!important;
 }

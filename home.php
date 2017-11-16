@@ -54,7 +54,7 @@
                   <figure class="effect-marley">
                     <?php the_post_thumbnail(); ?>
                       <figcaption>
-                          <h2><?php the_title(); ?></h2>
+                          <h2 class="title"><?php the_title(); ?></h2>
                           <h3><?php the_time( get_option('date_format') ); ?> ,| <?php the_time( get_option('time') ); ?> </h3>
                           <p><?php the_excerpt(); ?></p>
                           <a href="<?php the_permalink(); ?>">Ver mas</a>
@@ -68,7 +68,7 @@
             <figure class="effect-marley-mini">
                 <?php the_post_thumbnail(); ?>
                   <figcaption>
-                    <h2><?php the_title(); ?></h2>
+                    <h2 class="title"><?php the_title(); ?></h2>
                     <p><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></h3>
                     <a href="<?php the_permalink(); ?>">Ver mas</a>
                   </figcaption>
@@ -95,7 +95,7 @@
                   <figure class="effect-marley">
                     <?php the_post_thumbnail(); ?>
                       <figcaption>
-                          <h2><?php the_title(); ?></h2>
+                          <h2 class="title" ><?php the_title(); ?></h2>
                           <h3><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></h3>
                           <p><?php the_excerpt(); ?></p>
                           <a href="<?php the_permalink(); ?>">Ver mas</a>
@@ -109,7 +109,7 @@
             <figure class="effect-marley-mini">
                 <?php the_post_thumbnail(); ?>
                   <figcaption>
-                    <h2><?php the_title(); ?></h2>
+                    <h2 class="title"><?php the_title(); ?></h2>
                     <p><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></p>
                     <a href="<?php the_permalink(); ?>">Ver mas</a>
                   </figcaption>
@@ -160,7 +160,7 @@
                   <figure class="effect-marley">
                     <?php the_post_thumbnail(); ?>
                       <figcaption>
-                          <h2><?php the_title(); ?></h2>
+                          <h2 class="title"><?php the_title(); ?></h2>
                           <h3><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></h3>
                           <p><?php the_excerpt(); ?></p>
                           <a href="<?php the_permalink(); ?>">Ver mas</a>
@@ -174,7 +174,7 @@
             <figure class="effect-marley-mini">
                 <?php the_post_thumbnail(); ?>
                   <figcaption>
-                    <h2><?php the_title(); ?></h2>
+                    <h2 class="title"><?php the_title(); ?></h2>
                     <p><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></p>
                     <a href="<?php the_permalink(); ?>">Ver mas</a>
                   </figcaption>
@@ -201,7 +201,7 @@
                   <figure class="effect-marley">
                     <?php the_post_thumbnail(); ?>
                       <figcaption>
-                          <h2><?php the_title(); ?></h2>
+                          <h2 class="title"><?php the_title(); ?></h2>
                           <h3><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></h3>
                           <p><?php the_excerpt(); ?></p>
                           <a href="<?php the_permalink(); ?>">Ver mas</a>
@@ -215,7 +215,7 @@
             <figure class="effect-marley-mini">
                 <?php the_post_thumbnail(); ?>
                   <figcaption>
-                    <h2><?php the_title(); ?></h2>
+                    <h2 class="title"><?php the_title(); ?></h2>
                     <p><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></p>
                     <a href="<?php the_permalink(); ?>">Ver mas</a>
                   </figcaption>
@@ -266,7 +266,7 @@
                   <figure class="effect-marley">
                     <?php the_post_thumbnail(); ?>
                       <figcaption>
-                          <h2><?php the_title(); ?></h2>
+                          <h2 class="title"><?php the_title(); ?></h2>
                           <h3><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></h3>
                           <p><?php the_excerpt(); ?></p>
                           <a href="<?php the_permalink(); ?>">Ver mas</a>
@@ -280,7 +280,7 @@
             <figure class="effect-marley-mini">
                 <?php the_post_thumbnail(); ?>
                   <figcaption>
-                    <h2><?php the_title(); ?></h2>
+                    <h2 class="title"><?php the_title(); ?></h2>
                     <p><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></p>
                     <a href="<?php the_permalink(); ?>">Ver mas</a>
                   </figcaption>
