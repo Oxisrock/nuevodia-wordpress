@@ -1,3 +1,4 @@
+
 var maxLen = 50;
 var titles = jQuery ('.title')
 for (i in titles) {

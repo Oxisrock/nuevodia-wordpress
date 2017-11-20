@@ -20,13 +20,6 @@
 #text-3 h3:before, .text-3 h3:before {
   background: #ef2727!important;
 }
-#recent-posts-3 {
-  border: 2px solid #66238d!important;
-}
-#recent-posts-3 h3:before, .text-3 h3:before
-{
-  background: #66238d!important;
-}
 #sp_widget_post_slider-3 {
   border: 2px solid #66238d!important;
 }
@@ -289,4 +282,17 @@ figure.effect-marley h3 {
 }
 .mainmenu li a {
   padding: 18px 0.8em!important;
+  border-right: none!important;
+}
+.mainmenu li ul li a:hover {
+  background-color: #de7d1e!important;
+}
+.side-tab .tab-menu li {
+  width: 50%!important;
+}
+.side-tab .tab-menu li a {
+  padding: 0!important;
+}
+.sm-ads-item .sm-ads-content h4, .list-post-items .list-post-content h4 {
+  height: 32px!important;
 }

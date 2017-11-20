@@ -58,5 +58,17 @@ owl.on('mousewheel', '.owl-stage', function (e) {
     }
     e.preventDefault();
 });
+jQuery('.slider_post').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+  speed: 1000,
+  prevArrow: "<div class=\'slick-prev\'><i class=\'fa fa-chevron-left\'></i></div>",
+  nextArrow: "<div class=\'slick-next\'><i class=\'fa fa-chevron-right\'></i></div>",
+  dots: false,
+
+});
 });
 });

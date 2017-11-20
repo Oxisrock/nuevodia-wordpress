@@ -5,7 +5,7 @@
 			<section id="main-content">
 
         <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
-
+					<?php $post_views = get_post_views(get_the_ID());?>
 				<article class="post">
           <header class="post-title">
 						<h1><?php the_title(); ?></h1>
@@ -15,6 +15,7 @@
 					<div class="post-content">
 						<?php the_content(); ?>
 					</div>
+					<p>Este post ha sido visto <?php  echo sprintf( _n( '%s vez', '%s veces', $post_views, 'your_textdomain' ), $post_views );?></p>
 				</article>	<!-- article -->
         <?php endwhile; endif; ?>
 

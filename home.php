@@ -281,7 +281,7 @@
                 <?php the_post_thumbnail(); ?>
                   <figcaption>
                     <h2 class="title"><?php the_title(); ?></h2>
-                    <p><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></p>
+                    <p class="titlelast"><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></p>
                     <a href="<?php the_permalink(); ?>">Ver mas</a>
                   </figcaption>
                 </figure>
@@ -297,11 +297,11 @@
   </div>
   <div class="news-block padding-15 bg-white bd-espectaculos mb-40">
        <h2 class="block-espectaculos mb-40">ESPECTACULOS</h2>
-       <?php query_posts('category_name=espectaculos&showposts=3'); ?>
-       <div class="three-col-post">
+       <?php query_posts('showposts=6'); ?>
+       <div class="three-col-post slider_post">
        <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
               <a href="<?php the_permalink(); ?>">
-                  <div class="col-lg-4">
+                  <div class="">
                       <div class="card mp-40">
                           <?php the_post_thumbnail(); ?>
                           <h4><?php the_title(); ?></h4>
@@ -343,10 +343,10 @@
             <div class="news-block padding-15 bg-white bd-ciencia mb-40">
                  <h2 class="block-ciencia mb-40">CIENCIA Y TECNOLOGIA</h2>
                  <?php query_posts('category_name=ciencia-y-tecnologia    &showposts=3'); ?>
-                 <div class="three-col-post">
+                 <div class="three-col-post slider_post">
                  <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
                         <a href="<?php the_permalink(); ?>">
-                            <div class="col-lg-4">
+                            <div class="">
                                 <div class="card mp-40">
                                     <?php the_post_thumbnail(); ?>
                                     <h4><?php the_title(); ?></h4>

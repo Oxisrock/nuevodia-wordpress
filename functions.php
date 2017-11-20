@@ -12,6 +12,7 @@ function apk_load_styles_scripts() {
   wp_enqueue_script( 'script6', get_template_directory_uri() . '/js/slider_home.js', array ( 'jquery' ), 1.1, true);
   wp_enqueue_script( 'script7', get_template_directory_uri() . '/js/vendor/owl.carousel.js', array ( 'jquery' ), 1.1, true);
   wp_enqueue_script( 'script8', get_template_directory_uri() . '/js/truncktitle.js', array ( 'jquery' ), 1.1, true);
+  wp_enqueue_script( 'script9', get_template_directory_uri() . '/js/truncktitlewidget.js', array ( 'jquery' ), 1.1, true);
 
   }
 add_action('wp_enqueue_scripts', 'apk_load_styles_scripts');
@@ -84,7 +85,37 @@ function apk_register_footer4() {
 
 add_action('widgets_init', 'apk_register_footer4');
 
+// Función para contar visualizaciones de un post.
+function set_post_views() {
+    if (is_single()) {
+        $post_ID = get_the_ID();
+        $count = get_post_meta( $post_ID, 'post_views', true );
+
+        if ( $count == '' ) {
+            delete_post_meta( $post_ID, 'post_views' );
+            add_post_meta( $post_ID, 'post_views', 1 );
+        } else {
+            update_post_meta( $post_ID, 'post_views', ++$count );
+        }
+    }
+}
+add_action( 'wp', 'set_post_views' );
+
+// Función para obtener el número de visualizaciones de un post
+function get_post_views($post_ID){
+    $count = get_post_meta($post_ID, 'post_views', true);
+
+    if ($count == ''){
+        delete_post_meta($post_ID, 'post_views');
+        add_post_meta($post_ID, 'post_views', 0);
+        return 0;
+    }
+    return $count;
+}
 
 if ( function_exists( 'add_theme_support' ) )
 add_theme_support( 'post-thumbnails' );
+
+
+
 ?>

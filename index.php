@@ -4,6 +4,7 @@
 					<div class="col-md-8 sm-padding">
 			<section id="main-content" class="main-wrapper mb-40">
 				<?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
+					<?php $post_views = get_post_views(get_the_ID());?>
 					<div class="news-block padding-15 bg-white bd-grey mb-40">
 				<article class="post resume">
 					<header class="post-title">
@@ -14,6 +15,8 @@
 						<?php the_excerpt(); ?>
 						<a href="<?php the_permalink(); ?>" class="readmore"><?php _e('Seguir Leyendo', 'apk');?> &rarr;</a>
 					</div>
+
+					<p>Este post ha sido visto <?php  echo sprintf( _n( '%s vez', '%s veces', $post_views, 'your_textdomain' ), $post_views );?></p>
 				</article>	<!-- article -->
 			</div>
 				<?php endwhile; endif; ?>
