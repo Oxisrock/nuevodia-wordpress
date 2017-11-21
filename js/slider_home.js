@@ -1,16 +1,61 @@
   jQuery(document).ready(function () {
-  jQuery('.autoplay').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2004000,
-    arrows: false,
-    speed: 1000,
-    prevArrow: "<div class=\'slick-prev\'><i class=\'fa fa-chevron-left\'></i></div>",
-    nextArrow: "<div class=\'slick-next\'><i class=\'fa fa-chevron-right\'></i></div>",
-    dots: false,
-
-  });
+  jQuery('#carrusel').slick({
+  centerMode: true,
+  centerPadding: '30px',
+  slidesToShow: 1,
+  arrows: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  prevArrow: jQuery('.prev-btn'),
+  nextArrow: jQuery('.next-btn'),
+  responsive: [
+    {
+      breakpoint: 1681,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '30px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 1501,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '200px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 1025,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '200px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
   jQuery('.news-ticker').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -21,43 +66,6 @@
     prevArrow: jQuery('.slick-prev1'),
     nextArrow: jQuery('.slick-next2')
   });
-  jQuery(document).ready(function() {
-    var owl = jQuery('.owl-carousel');
-    owl.owlCarousel({
-    center: true,
-    items:2,
-    loop:true,
-    margin:0,
-    navContainer: '.owl.nav',
-    navSpeed: 4000,
-    responsive:{
-        600:{
-            items:2,
-            scrollPerPage: true,
-            autoplayHoverPause: true,
-        }
-    },
-   autoplay: true,
-   scrollPerPage: true,
-   autoplayHoverPause: true,
-   autoplayTimeout: 4000,
-   autoHeight: true,
-
-});
-jQuery('.owl-next-btn').click(function() {
-  owl.trigger('next.owl.carousel');
-})
-jQuery('.owl-prev-btn').click(function() {
-  owl.trigger('prev.owl.carousel');
-})
-owl.on('mousewheel', '.owl-stage', function (e) {
-    if (e.deltaY>0) {
-        owl.trigger('next.owl');
-    } else {
-        owl.trigger('prev.owl');
-    }
-    e.preventDefault();
-});
 jQuery('.slider_post').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -70,5 +78,6 @@ jQuery('.slider_post').slick({
   dots: false,
 
 });
-});
+jQuery('.slider-img').children().addClass('img-responsive')
+
 });

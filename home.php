@@ -2,12 +2,12 @@
 <br>
 <div class="main-content ov-hidden">
   <div class="container">
-    <div class="owl-nav">
-      <a class="owl-next-btn" style="width: 20%;">
+    <div class="slider-nav">
+      <a class="next-btn" style="width: 20%;">
       </a>
-      <a class="owl-prev-btn" style="width: 20%;">
+      <a class="prev-btn" style="width: 20%;">
       </a>
-        <div class="owl-carousel">
+        <div id="carrusel">
           <?php // mostrar 1 post por cada categoria
           $categories=get_categories('orderby=name&order=ASC');
           foreach($categories as $category) {
@@ -16,16 +16,16 @@
        if ($posts) {
         foreach($posts as $post) {
          setup_postdata($post); ?>
+      <div class="carousel">
         <a href="<?php the_permalink(); ?>">
-          <div class="carousel">
-         <div><?php the_post_thumbnail(); ?></div>
+         <div class="slider-img"><?php the_post_thumbnail(); ?></div>
            <!-- <p style="color: #000; font-size: 6em;"><?= $category->name ?></p> -->
-           <div class="picture-caption-fixed" style="background: #000;">
+           <div class="title-slider" style="background: #000;">
              <h2><?php the_title(); ?></h2>
            </div>
              <!-- <p style="color: #000;"><?php the_time( get_option('date_format') ); ?> </p> -->
-           </div>
-       </a>
+        </a>
+      </div>
          <!-- <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p> -->
         <?php
         } // fin foreach posts
