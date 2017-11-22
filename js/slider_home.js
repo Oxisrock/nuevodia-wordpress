@@ -1,10 +1,10 @@
   jQuery(document).ready(function () {
   jQuery('#carrusel').slick({
   centerMode: true,
-  centerPadding: '30px',
+  centerPadding: '60px',
   slidesToShow: 1,
   arrows: true,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2000,
   prevArrow: jQuery('.prev-btn'),
   nextArrow: jQuery('.next-btn'),
@@ -14,7 +14,7 @@
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '30px',
+        centerPadding: '300px',
         slidesToShow: 1
       }
     },
@@ -23,7 +23,7 @@
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '200px',
+        centerPadding: '300px',
         slidesToShow: 1
       }
     },
@@ -32,7 +32,7 @@
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '200px',
+        centerPadding: '300px',
         slidesToShow: 1
       }
     },

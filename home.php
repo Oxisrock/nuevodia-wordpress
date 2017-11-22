@@ -3,9 +3,9 @@
 <div class="main-content ov-hidden">
   <div class="container">
     <div class="slider-nav">
-      <a class="next-btn" style="width: 20%;">
+      <a class="next-btn" style="height: 100%;">
       </a>
-      <a class="prev-btn" style="width: 20%;">
+      <a class="prev-btn" style="height: 100%;">
       </a>
         <div id="carrusel">
           <?php // mostrar 1 post por cada categoria
