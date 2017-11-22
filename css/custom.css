@@ -229,11 +229,11 @@ line-height: 28px!important;
 .slick-slide {
   -webkit-filter:saturate(20%)!important; /* Safari 6.0 - 9.0 */
   filter: saturate(20%)!important;
+
 }
 .slider-img img {
   height: 355px!important;
   width: 100%!important;
-  object-fit: cover!important;
 }
 .slick-current.slick-center {
   opacity: 1!important;

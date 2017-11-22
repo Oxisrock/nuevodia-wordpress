@@ -14,7 +14,7 @@
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '300px',
+        centerPadding: '155px',
         slidesToShow: 1
       }
     },
@@ -23,7 +23,7 @@
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '300px',
+        centerPadding: '155px',
         slidesToShow: 1
       }
     },
@@ -32,7 +32,7 @@
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '300px',
+        centerPadding: '40px',
         slidesToShow: 1
       }
     },
