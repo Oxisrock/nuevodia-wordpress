@@ -226,7 +226,7 @@ line-height: 28px!important;
   color: #ddd!important;
 }
 /*Slider*/
-.slick-slide {
+.slider-nav .slick-slide {
   -webkit-filter:saturate(20%)!important; /* Safari 6.0 - 9.0 */
   filter: saturate(20%)!important;
 
