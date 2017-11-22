@@ -32,10 +32,10 @@
 
 	</div><!-- /.news-ticker-wrap -->
 		<header id="header" class="header sticky-header">
-      <div class="mid-header" style="background-image: url(<?php echo esc_url( get_theme_mod( 'img-upload-header' ) ); ?>); background-size: cover; background-position:top;">
+      <div class="mid-header" style="background-image: url(<?php echo esc_url( get_theme_mod( 'img-upload-header' ) ); ?>);">
           <div class="container">
               <div class="site-branding text-center">
-								<a href="/nuevodia/index.php"><img class="text-center" src='<?php echo esc_url( get_theme_mod( 'img-upload-logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> Logo' class="img-responsive"></a>
+								<a href="/nuevodia/index.php"><img id="logo" class="text-center" src='<?php echo esc_url( get_theme_mod( 'img-upload-logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> Logo' class="img-responsive"></a>
                   <div class="container">
                   <div class="col-xs-6 xs-padding xs-text-center">
                       <p class="no-margin fz-13 text-light"></p>

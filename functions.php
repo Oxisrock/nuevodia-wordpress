@@ -116,22 +116,25 @@ function get_post_views($post_ID){
 if ( function_exists( 'add_theme_support' ) )
 add_theme_support( 'post-thumbnails' );
 
+  /*Header administrable*/
 function magazine_theme_customize_register( $wp_customize ) {
+  /*agrega el panel*/
+
   $wp_customize->add_panel( 'demo_panel', array(
     'title' => __( 'Header', 'textdomain' ),
  'description' => __( 'Header administrable', 'textdomain' ),
     'priority' => 160,
     'capability' => 'edit_theme_options'
   ));
-
-  // Primera seccion
+  // Agrega la seccion
   $wp_customize->add_section( 'primera_seccion' , array(
-    'title' => __( 'logo', 'textdomain' ),
+    'title' => __( 'Header', 'textdomain' ),
     'panel' => 'demo_panel',
     'priority' => 1,
     'capability' => 'edit_theme_options',
   ));
 
+  /* Inputs de logo y el header */
 
   $wp_customize->add_setting( 'img-upload-logo');
 
@@ -143,7 +146,7 @@ function magazine_theme_customize_register( $wp_customize ) {
   						'label' => 'Logo',
   						'section' => 'primera_seccion',
   						'settings' => 'img-upload-logo',
-              'priority' => 1
+              'priority' => 60
   				)
   		)
   );
@@ -157,10 +160,11 @@ function magazine_theme_customize_register( $wp_customize ) {
   						'label' => 'Header',
   						'section' => 'primera_seccion',
   						'settings' => 'img-upload-header',
-              'priority' => 1
+              'priority' => 80
   				)
   		)
   );
 }
 add_action( 'customize_register', 'magazine_theme_customize_register' );
+
 ?>
