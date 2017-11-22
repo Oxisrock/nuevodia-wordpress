@@ -73,7 +73,7 @@
 /* 1.2 Mid Header
    ============== */
 .mid-header{
-    background-image: url("../img/header_background.png");
+    /*background-image: url("../img/header_background.png");*/
     display: block;
     padding: 30px 0;
 }

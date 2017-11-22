@@ -20,8 +20,8 @@
         <a href="<?php the_permalink(); ?>">
          <div class="slider-img"><?php the_post_thumbnail(); ?></div>
            <!-- <p style="color: #000; font-size: 6em;"><?= $category->name ?></p> -->
-           <div class="title-slider" style="background: #000;">
-             <h2><?php the_title(); ?></h2>
+           <div class="picture-caption-fixed">
+             <h2 class="margin-top-5 margin-bottom-5 font-weight-200"><?php the_title(); ?></h2>
            </div>
              <!-- <p style="color: #000;"><?php the_time( get_option('date_format') ); ?> </p> -->
         </a>

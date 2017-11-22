@@ -116,6 +116,51 @@ function get_post_views($post_ID){
 if ( function_exists( 'add_theme_support' ) )
 add_theme_support( 'post-thumbnails' );
 
+function magazine_theme_customize_register( $wp_customize ) {
+  $wp_customize->add_panel( 'demo_panel', array(
+    'title' => __( 'Header', 'textdomain' ),
+ 'description' => __( 'Header administrable', 'textdomain' ),
+    'priority' => 160,
+    'capability' => 'edit_theme_options'
+  ));
+
+  // Primera seccion
+  $wp_customize->add_section( 'primera_seccion' , array(
+    'title' => __( 'logo', 'textdomain' ),
+    'panel' => 'demo_panel',
+    'priority' => 1,
+    'capability' => 'edit_theme_options',
+  ));
 
 
+  $wp_customize->add_setting( 'img-upload-logo');
+
+  $wp_customize->add_control(
+  		new WP_Customize_Image_Control(
+  				$wp_customize,
+  				'img-upload-logo',
+  				array(
+  						'label' => 'Logo',
+  						'section' => 'primera_seccion',
+  						'settings' => 'img-upload-logo',
+              'priority' => 1
+  				)
+  		)
+  );
+  $wp_customize->add_setting( 'img-upload-header' );
+
+  $wp_customize->add_control(
+  		new WP_Customize_Image_Control(
+  				$wp_customize,
+  				'img-upload-header',
+  				array(
+  						'label' => 'Header',
+  						'section' => 'primera_seccion',
+  						'settings' => 'img-upload-header',
+              'priority' => 1
+  				)
+  		)
+  );
+}
+add_action( 'customize_register', 'magazine_theme_customize_register' );
 ?>
