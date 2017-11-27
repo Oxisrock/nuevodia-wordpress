@@ -8,11 +8,11 @@
 
 <body>
 
-	<!-- <div id='preloader' >
+	<div id='preloader' >
 			<div class='loader' >
 					<img src="wp-content/themes/tema_prueba/img/loading.gif" width="200" alt="">
 			</div>
-	</div> -->
+	</div>
 
 	<div class="news-ticker-wrap">
 		 <span class="ticker-title tt-u">Lo último</span>
@@ -35,7 +35,7 @@
       <div class="mid-header" style="background-image: url(<?php echo esc_url( get_theme_mod( 'img-upload-header' ) ); ?>);">
           <div class="container">
               <div class="site-branding text-center">
-								<a href="/nuevodia/index.php"><img id="logo" class="text-center" src='<?php echo esc_url( get_theme_mod( 'img-upload-logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> Logo' class="img-responsive"></a>
+								<a href="/wp_nuevodia/index.php"><img id="logo" class="text-center" src='<?php echo esc_url( get_theme_mod( 'img-upload-logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> Logo' class="img-responsive"></a>
                   <div class="container">
                   <div class="col-xs-6 xs-padding xs-text-center">
                       <p class="no-margin fz-13 text-light"></p>
@@ -61,27 +61,27 @@
 													<nav class="mainmenu">
 															<ul id="navi-menu">
 
-																	<li class="current_page_item"><a href="/nuevodia/">Inicio</a></li>
-																	<li class="page_item"><a href="/nuevodia/index.php/category/falcon/">Falcón</a>
+																	<li class="current_page_item"><a href="/wp_nuevodia/">Inicio</a></li>
+																	<li class="page_item"><a href="/wp_nuevodia/index.php/category/falcon/">Falcón</a>
 																			<ul>
-																					 <li><a href="/nuevodia/index.php/category/falcon/politica">Política</a></li>
-																					 <li><a href="/nuevodia/index.php/category/falcon/economia">Economía</a></li>
-																					 <li><a href="/nuevodia/index.php/category/falcon/educacion">Educación</a></li>
-																					 <li><a href="/nuevodia/index.php/category/falcon/salud">Salud</a></li>
-																					 <li><a href="/nuevodia/index.php/category/falcon/educacion">Comunidad</a></li>
-																					 <li><a href="/nuevodia/index.php/category/falcon/salud">Generales</a></li>
+																					 <li><a href="/wp_nuevodia/index.php/category/falcon/politica">Política</a></li>
+																					 <li><a href="/wp_nuevodia/index.php/category/falcon/economia">Economía</a></li>
+																					 <li><a href="/wp_nuevodia/index.php/category/falcon/educacion">Educación</a></li>
+																					 <li><a href="/wp_nuevodia/index.php/category/falcon/salud">Salud</a></li>
+																					 <li><a href="/wp_nuevodia/index.php/category/falcon/educacion">Comunidad</a></li>
+																					 <li><a href="/wp_nuevodia/index.php/category/falcon/salud">Generales</a></li>
 																			</ul>
 																	</li>
-																	<li><a href="/nuevodia/index.php/category/sucesos">Sucesos</a></li>
-																	<li><a href="/nuevodia/index.php/category/nacionales">Nacionales</a></li>
-																	<li><a href="/nuevodia/index.php/category/internacionales">Internacionales</a></li>
-																	<li><a href="/nuevodia/index.php/category/opinion">Opinión</a></li>
-																	<li><a href="/nuevodia/index.php/category/deportes">Deportes</a></li>
-																	<li><a href="/nuevodia/index.php/category/espectaculos">Espectáculos</a></li>
-																	<li><a href="/nuevodia/index.php/category/naranja">Naranja</a>
+																	<li><a href="/wp_nuevodia/index.php/category/sucesos">Sucesos</a></li>
+																	<li><a href="/wp_nuevodia/index.php/category/nacionales">Nacionales</a></li>
+																	<li><a href="/wp_nuevodia/index.php/category/internacionales">Internacionales</a></li>
+																	<li><a href="/wp_nuevodia/index.php/category/opinion">Opinión</a></li>
+																	<li><a href="/wp_nuevodia/index.php/category/deportes">Deportes</a></li>
+																	<li><a href="/wp_nuevodia/index.php/category/espectaculos">Espectáculos</a></li>
+																	<li><a href="/wp_nuevodia/index.php/category/naranja">Naranja</a>
 																	<li class="page_item"><a href="#noticias">Más</a>
 																			<ul>
-																					<li><a href="/nuevodia/index.php/category/ciencia-y-tecnologia">Ciencia y tecnología</a></li>
+																					<li><a href="/wp_nuevodia/index.php/category/ciencia-y-tecnologia">Ciencia y tecnología</a></li>
 																					 <li><a href="index.html">Turismo</a></li>
 																					 <li><a href="index.html">Curiosidades</a></li>
 																					 <li><a href="index.html">Cultura</a></li>
