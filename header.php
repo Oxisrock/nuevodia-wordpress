@@ -8,11 +8,11 @@
 
 <body>
 
-	<div id='preloader' >
+	<!-- <div id='preloader' >
 			<div class='loader' >
 					<img src="wp-content/themes/tema_prueba/img/loading.gif" width="200" alt="">
 			</div>
-	</div>
+	</div> -->
 
 	<div class="news-ticker-wrap">
 		 <span class="ticker-title tt-u">Lo último</span>
@@ -55,11 +55,11 @@
           </div>
       </div><!-- /.mid-header -->
 			<div class="mainmenu-wrap bg-red">
-					<div class="container">
-							<div class="col-md-9 col-xs-6">
+					<div class="container menu-top">
+							<div class="">
 											<div class="menu-wrap mean-menu">
-													<nav class="mainmenu">
-															<ul id="navi-menu">
+													<nav class="mainmenu menu-complete">
+															<ul id="navi-menu" class="menu-items">
 
 																	<li class="current_page_item"><a href="/wp_nuevodia/">Inicio</a></li>
 																	<li class="page_item"><a href="/wp_nuevodia/index.php/category/falcon/">Falcón</a>
@@ -82,18 +82,18 @@
 																	<li class="page_item"><a href="#noticias">Más</a>
 																			<ul>
 																					<li><a href="/wp_nuevodia/index.php/category/ciencia-y-tecnologia">Ciencia y tecnología</a></li>
-																					 <li><a href="index.html">Turismo</a></li>
-																					 <li><a href="index.html">Curiosidades</a></li>
-																					 <li><a href="index.html">Cultura</a></li>
-																					 <li><a href="index.html">Historias que transcienden</a></li>
+																					 <li><a href="index.php">Turismo</a></li>
+																					 <li><a href="index.php">Curiosidades</a></li>
+																					 <li><a href="index.php">Cultura</a></li>
+																					 <li><a href="index.php">Historias que transcienden</a></li>
 																			</ul>
 																	</li>
 																	</li>
 															</ul>
+															<?php get_search_form(); ?>
 													</nav>
 											</div>
 									</div>
-									<?php get_search_form(); ?>
 									<div class="mobile-menu"></div>
 					</div>
 			</div><!-- /.mainmenu-wrap -->

@@ -13,6 +13,7 @@ function apk_load_styles_scripts() {
   wp_enqueue_script( 'script7', get_template_directory_uri() . '/js/vendor/owl.carousel.js', array ( 'jquery' ), 1.1, true);
   wp_enqueue_script( 'script8', get_template_directory_uri() . '/js/truncktitle.js', array ( 'jquery' ), 1.1, true);
   wp_enqueue_script( 'script9', get_template_directory_uri() . '/js/truncktitlewidget.js', array ( 'jquery' ), 1.1, true);
+  wp_enqueue_script( 'script2', 'https://platform.twitter.com/widgets.js' , array ( 'jquery' ), 1.1, true);
 
   }
 add_action('wp_enqueue_scripts', 'apk_load_styles_scripts');
