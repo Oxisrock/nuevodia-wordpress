@@ -55,16 +55,18 @@
             <div class="section-falcon">
               <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
                 <?php if ($count == 1) : ?>
-                  <div class="section-falcon-one">
-                    <figure class="">
+                  <div class="section-falcon-one grid">
+                    <figure class="effect-marley">
                       <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
                       $url = wp_get_attachment_url( $post_thumbnail_id);
                       ?>
                       <div class="img-post-falcon-one" style="background-image: url(<?php echo $url; ?>);">
+                        <figcaption>
                         <h2 class="title"><?php the_title(); ?></h2>
                         <h3><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></h3>
                         <p><?php the_excerpt(); ?></p>
                         <a href="<?php the_permalink(); ?>">Ver mas</a>
+                      </figcaption>
                       </div>
                     </figure>
                     <?php $count++; ?>
@@ -196,43 +198,38 @@
             <?php if ( function_exists( 'easingslider' ) ) { easingslider( 183 ); } ?>
           </div>
           <div class="news-block padding-15 bg-white bd-inter separacion">
-            <h2 class="block-inter mb-20">Internacionales</h2>
-            <?php query_posts('category_name=internacionales&showposts=4'); ?>
-            <?php $count = 1;?>
-            <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
-              <div class="two-col-posts">
-                <div class="col-md-6 padding-05">
-                  <?php if ($count == 1) : ?>
-                    <div class="grid">
-                      <figure class="effect-marley">
-                        <?php the_post_thumbnail(); ?>
-                        <figcaption>
-                          <h2 class="title"><?php the_title(); ?></h2>
-                          <h3><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></h3>
-                          <p><?php the_excerpt(); ?></p>
-                          <a href="<?php the_permalink(); ?>">Ver mas</a>
-                        </figcaption>
-                      </figure>
-                      <?php $count++; ?>
+            <div class="btn-inter-next" style="height: 100%;">
+              <a class="next-btn-inter">
+                <i class="fa fa-chevron-right fa-2x"></i>
+              </a>
+            </div>
+            <div class="btn-inter-prev" style="height: 100%;">
+              <a class="prev-btn-inter">
+                <i class="fa fa-chevron-left fa-2x"></i>
+              </a>
+            </div>
+            <h2 class="block-inter mb-40">INTERNACIONALES</h2>
+            <?php query_posts('category_name=internacionales&showposts=6'); ?>
+            <div class="slider_post_inter section-inter">
+              <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
+                <!-- <a href="<?php the_permalink(); ?>"> -->
+                  <div class="section-inter-post">
+                    <div class="card mp-40">
+                      <a href="<?php the_permalink(); ?>">
+                      <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
+                      $url = wp_get_attachment_url( $post_thumbnail_id);
+                      ?>
+                      <div class="img-post-inter" style="background-image:url(<?php echo $url; ?>);"></div>
+                      </a>
+                      <h4 class="text-left"><?php the_title(); ?></h4>
+                      <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
                     </div>
-                  <?php else : ?>
-                    <div class="sm-post-item">
-                      <div class="grid-mini">
-                        <figure class="effect-marley-mini">
-                          <?php the_post_thumbnail(); ?>
-                          <figcaption>
-                            <h2 class="title"><?php the_title(); ?></h2>
-                            <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
-                            <a href="<?php the_permalink(); ?>">Ver mas</a>
-                          </figcaption>
-                        </figure>
-                      </div>
-                    </div>
-                  <?php endif; ?>
-                </div>
-              </div>
-            <?php endwhile; endif; ?>
-          </div><!-- .news-block -->
+                  </div>
+                <!-- </a> -->
+              <?php endwhile; endif; ?>
+
+            </div>
+          </div>
           <!-- .Mini-banner-ads -->
           <div class="minibanners separacion">
             <div class="sm-ads-item ov-hidden minibanner">
@@ -247,7 +244,7 @@
           <!-- .Mini-banner-ads -->
           <div class="news-block padding-15 bg-white bd-deportes separacion">
             <h2 class="block-deportes mb-20">Deportes</h2>
-            <?php query_posts('category_name=deportes&showposts=5'); ?>
+            <?php query_posts('category_name=deportes&showposts=4'); ?>
             <?php $count = 1;?>
             <div class="section-deportes">
               <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
@@ -356,22 +353,35 @@
           </div>
           <!-- .Mini-banner-ads -->
           <div class="news-block padding-15 bg-white bd-opinion separacion">
+            <div class="btn-opinion-next" style="height: 100%;">
+              <a class="next-btn-opinion">
+                <i class="fa fa-chevron-right fa-2x"></i>
+              </a>
+            </div>
+            <div class="btn-opinion-prev" style="height: 100%;">
+              <a class="prev-btn-opinion">
+                <i class="fa fa-chevron-left fa-2x"></i>
+              </a>
+            </div>
             <h2 class="block-opinion mb-40">OPINIóN</h2>
-            <?php query_posts('category_name=opinion&showposts=3'); ?>
-            <div class="three-col-post">
+            <?php query_posts('category_name=opinion&showposts=6'); ?>
+            <div class="slider_post section-opinion">
               <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
-                <a href="<?php the_permalink(); ?>">
-                  <div class="col-lg-4">
+                <!-- <a href="<?php the_permalink(); ?>"> -->
+                  <div class="section-opinion-post">
                     <div class="card mp-40">
+                      <a href="<?php the_permalink(); ?>">
                       <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
                       $url = wp_get_attachment_url( $post_thumbnail_id);
                       ?>
                       <div class="img-post-opinion" style="background-image:url(<?php echo $url; ?>);"></div>
-                      <h4><?php the_title(); ?></h4>
+                    </a>
+                      <h4 class="text-left"><?php the_title(); ?></h4>
                       <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+                      <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><i class="fa fa-user"></i> <?php the_author(); ?> </a>
                     </div>
                   </div>
-                </a>
+                <!-- </a> -->
               <?php endwhile; endif; ?>
 
             </div>

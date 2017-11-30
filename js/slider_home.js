@@ -70,15 +70,28 @@
 jQuery('.slider_post').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2000,
-  arrows: false,
+  arrows: true,
   speed: 1000,
-  prevArrow: "<div class=\'slick-prev\'><i class=\'fa fa-chevron-left\'></i></div>",
-  nextArrow: "<div class=\'slick-next\'><i class=\'fa fa-chevron-right\'></i></div>",
+  prevArrow: jQuery('.prev-btn-opinion'),
+  nextArrow: jQuery('.next-btn-opinion'),
   dots: false,
 
 });
+jQuery('.slider_post_inter').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: true,
+  speed: 1000,
+  prevArrow: jQuery('.prev-btn-inter'),
+  nextArrow: jQuery('.next-btn-inter'),
+  dots: false,
+
+});
+
 jQuery('.slider-img').children().addClass('img-responsive')
 
 });
