@@ -18,7 +18,12 @@
                 setup_postdata($post); ?>
                 <div class="carousel">
                   <a href="<?php the_permalink(); ?>">
-                    <div class="slider-img"><?php the_post_thumbnail(); ?></div>
+                    <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
+                    $url = wp_get_attachment_url( $post_thumbnail_id);
+                    ?>
+                    <div class="slider-img" style="background-image: url(<?php echo $url; ?>);">
+
+                    </div>
                     <!-- <p style="color: #000; font-size: 6em;"><?= $category->name ?></p> -->
                     <div class="picture-caption-fixed">
                       <h2 class="margin-top-5 margin-bottom-5 font-weight-200"><?php the_title(); ?></h2>
@@ -37,53 +42,54 @@
     </div>
     <!-- <div class="owl-nav"><div class="owl-prev-btn">prev</div><div class="owl-next-btn">next</div></div> -->
     <br>
-    <div class="banner bg-white mb-10">
+    <div class="banner bg-white separacion">
       <?php if ( function_exists( 'easingslider' ) ) { easingslider( 180 ); } ?>
     </div>
-    <div class="col-md-8 sm-padding">
-      <section id="main-content" class="main-wrapper mb-20">
-        <div class="news-block padding-15 bg-white bd-falcon mb-20">
-          <h2 class="block-falcon mb-20">FALCÓN</h2>
-          <?php query_posts('category_name=falcon&showposts=4'); ?>
-          <?php $count = 1;?>
-          <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
-            <div class="two-col-posts">
-              <div class="col-md-6 padding-05">
+    <div class="home">
+      <div class="section sm-padding">
+        <section id="main-content" class="main-wrapper mb-20">
+          <div class="news-block padding-15 bg-white bd-falcon separacion">
+            <h2 class="block-falcon mb-20">FALCÓN</h2>
+            <?php query_posts('category_name=falcon&showposts=3'); ?>
+            <?php $count = 1;?>
+            <div class="section-falcon">
+              <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
                 <?php if ($count == 1) : ?>
-                  <div class="grid">
-                    <figure class="effect-marley">
-                      <?php the_post_thumbnail(); ?>
-                      <figcaption>
+                  <div class="section-falcon-one">
+                    <figure class="">
+                      <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
+                      $url = wp_get_attachment_url( $post_thumbnail_id);
+                      ?>
+                      <div class="img-post-falcon-one" style="background-image: url(<?php echo $url; ?>);">
                         <h2 class="title"><?php the_title(); ?></h2>
                         <h3><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></h3>
                         <p><?php the_excerpt(); ?></p>
                         <a href="<?php the_permalink(); ?>">Ver mas</a>
-                      </figcaption>
+                      </div>
                     </figure>
                     <?php $count++; ?>
                   </div>
-                <?php else : ?>
-                  <div class="sm-post-item">
-                    <div class="grid-mini">
-                      <figure class="effect-marley-mini">
-                        <?php the_post_thumbnail(); ?>
-                        <figcaption>
-                          <h2 class="title"><?php the_title(); ?></h2>
-                          <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
-                            <a href="<?php the_permalink(); ?>">Ver mas</a>
-                          </figcaption>
-                        </figure>
+                  <div class="section-falcon-two">
+                  <?php else : ?>
+                    <figure class="">
+                      <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
+                      $url = wp_get_attachment_url( $post_thumbnail_id);
+                      ?>
+                      <div class="img-post-falcon-two" style="background-image: url(<?php echo $url; ?>);">
+                        <h2 class="title"><?php the_title(); ?></h2>
+                        <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+                        <a href="<?php the_permalink(); ?>">Ver mas</a>
                       </div>
-                    </div>
+                    </figure>
                   <?php endif; ?>
-                </div>
+                <?php endwhile; endif; ?>
               </div>
-            <?php endwhile; endif; ?>
+            </div>
           </div><!-- .news-block -->
-          <div class="banner-in-content bg-white bd-ads ov-hidden mb-20">
+          <div class="banner-in-content bg-white bd-ads ov-hidden separacion">
             <?php if ( function_exists( 'easingslider' ) ) { easingslider( 183 ); } ?>
           </div>
-          <div class="news-block padding-15 bg-white bd-sucesos mb-20">
+          <div class="news-block padding-15 bg-white bd-sucesos separacion">
             <h2 class="block-sucesos mb-20">Sucesos</h2>
             <?php query_posts('category_name=sucesos&showposts=4'); ?>
             <?php $count = 1;?>
@@ -122,7 +128,7 @@
             <?php endwhile; endif; ?>
           </div><!-- .news-block -->
           <!-- .Mini-banner-ads -->
-          <div class="two-col-posts">
+          <div class="two-col-posts separacion">
             <div class="sm-post-item">
 
               <div class="col-md-6 padding-1">
@@ -148,7 +154,7 @@
             </div>
           </div>
           <!-- .Mini-banner-ads -->
-          <div class="news-block padding-15 bg-white bd-nacionales mb-20">
+          <div class="news-block padding-15 bg-white bd-nacionales separacion">
             <h2 class="block-nacionales mb-20">Nacionales</h2>
             <?php query_posts('category_name=nacionales&showposts=4'); ?>
             <?php $count = 1;?>
@@ -186,10 +192,10 @@
               </div>
             <?php endwhile; endif; ?>
           </div><!-- .news-block -->
-          <div class="banner-in-content bg-white bd-ads ov-hidden mb-20">
+          <div class="banner-in-content bg-white bd-ads ov-hidden separacion">
             <?php if ( function_exists( 'easingslider' ) ) { easingslider( 183 ); } ?>
           </div>
-          <div class="news-block padding-15 bg-white bd-inter mb-20">
+          <div class="news-block padding-15 bg-white bd-inter separacion">
             <h2 class="block-inter mb-20">Internacionales</h2>
             <?php query_posts('category_name=internacionales&showposts=4'); ?>
             <?php $count = 1;?>
@@ -228,75 +234,59 @@
             <?php endwhile; endif; ?>
           </div><!-- .news-block -->
           <!-- .Mini-banner-ads -->
-          <div class="two-col-posts">
-            <div class="sm-post-item">
+          <div class="minibanners separacion">
+            <div class="sm-ads-item ov-hidden minibanner">
+              <?php if ( function_exists( 'easingslider' ) ) { easingslider( 184 ); } ?>
+            </div>
+            <div class="sm-ads-item ov-hidden minibanner2">
 
-              <div class="col-md-6 padding-1">
-                <div class="small-posts">
-                  <div class="sm-ads-item ov-hidden">
-                    <?php if ( function_exists( 'easingslider' ) ) { easingslider( 184 ); } ?>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-md-6 padding-1">
-                <div class="small-posts">
-                  <div class="sm-ads-item ov-hidden">
-
-                    <?php if ( function_exists( 'easingslider' ) ) { easingslider( 186 ); } ?>
-
-                  </div>
-
-                </div>
-              </div>
+              <?php if ( function_exists( 'easingslider' ) ) { easingslider( 186 ); } ?>
 
             </div>
           </div>
           <!-- .Mini-banner-ads -->
-          <div class="news-block padding-15 bg-white bd-deportes mb-20">
+          <div class="news-block padding-15 bg-white bd-deportes separacion">
             <h2 class="block-deportes mb-20">Deportes</h2>
-            <?php query_posts('category_name=deportes&showposts=4'); ?>
+            <?php query_posts('category_name=deportes&showposts=5'); ?>
             <?php $count = 1;?>
-            <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
-              <div class="two-col-posts">
-                <div class="col-md-6 padding-05">
-                  <?php if ($count == 1) : ?>
-                    <div class="grid">
-                      <figure class="effect-marley">
-                        <?php the_post_thumbnail(); ?>
-                        <figcaption>
-                          <h2 class="title"><?php the_title(); ?></h2>
-                          <h3><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></h3>
-                          <p><?php the_excerpt(); ?></p>
-                          <a href="<?php the_permalink(); ?>">Ver mas</a>
-                        </figcaption>
-                      </figure>
-                      <?php $count++; ?>
-                    </div>
-                  <?php else : ?>
-                    <div class="sm-post-item">
-                      <div class="grid-mini">
-                        <figure class="effect-marley-mini">
-                          <?php the_post_thumbnail(); ?>
-                          <figcaption>
-                            <h2 class="title"><?php the_title(); ?></h2>
-                            <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
-                            <a href="<?php the_permalink(); ?>">Ver mas</a>
-                          </figcaption>
-                        </figure>
+            <div class="section-deportes">
+              <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
+                <?php if ($count == 1) : ?>
+                  <div class="section-deportes-one">
+                    <figure class="">
+                      <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
+                      $url = wp_get_attachment_url( $post_thumbnail_id);
+                      ?>
+                      <div class="img-post-deportes" style="background-image: url(<?php echo $url; ?>);">
+
                       </div>
-                    </div>
+                      <figcaption>
+                        <h2 class="title"><?php the_title(); ?></h2>
+                        <h3><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></h3>
+                        <p><?php the_excerpt(); ?></p>
+                        <a href="<?php the_permalink(); ?>">Ver mas</a>
+                      </figcaption>
+                    </figure>
+                    <?php $count++; ?>
+                  </div>
+                  <div class="section-deportes-two">
+                  <?php else : ?>
+                      <a href="<?php the_permalink(); ?>">
+                      <div class="section-deportes-two-content">
+                        <h2 class=""><?php the_title(); ?></h2>
+                        <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+                      </div>
+                      </a>
                   <?php endif; ?>
-                </div>
+                <?php endwhile; endif; ?>
               </div>
-            <?php endwhile; endif; ?>
-          </div><!-- .news-block -->
-          <div class="banner-in-content bg-white bd-ads ov-hidden mb-20">
+            </div>
+          </div>
+          <div class="banner-in-content bg-white bd-ads ov-hidden separacion">
             <?php if ( function_exists( 'easingslider' ) ) { easingslider( 183 ); } ?>
           </div>
-          <div class="esp">
-            <div class="news-block bd-espectaculos mb-40 padding-15 ml-5">
+          <div class="esp separacion">
+            <div class="news-block bd-espectaculos padding-15 ml-5">
               <h2 class="block-espectaculos mb-40">ESPECTÁCULOS</h2>
               <?php $count = 1;?>
               <?php query_posts('category_name=espectaculos&showposts=3'); ?>
@@ -324,7 +314,7 @@
 
               </div>
             </div>
-            <div class="news-block bd-ciencia mb-40 padding-15 md-5">
+            <div class="news-block bd-ciencia padding-15 md-5">
               <h2 class="block-ciencia mb-40">CIENCIA Y TECNOLOGÍA</h2>
               <?php $count = 1;?>
               <?php query_posts('category_name=ciencia-y-tecnologia&showposts=3'); ?>
@@ -354,33 +344,18 @@
             </div>
           </div>
           <!-- .Mini-banner-ads -->
-          <div class="two-col-posts">
-            <div class="sm-post-item">
+          <div class="minibanners separacion">
+            <div class="sm-ads-item ov-hidden minibanner">
+              <?php if ( function_exists( 'easingslider' ) ) { easingslider( 184 ); } ?>
+            </div>
+            <div class="sm-ads-item ov-hidden minibanner2">
 
-              <div class="col-md-6">
-                <div class="small-posts">
-                  <div class="sm-ads-item ov-hidden">
-                    <?php if ( function_exists( 'easingslider' ) ) { easingslider( 184 ); } ?>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="small-posts">
-                  <div class="sm-ads-item ov-hidden">
-
-                    <?php if ( function_exists( 'easingslider' ) ) { easingslider( 186 ); } ?>
-
-                  </div>
-
-                </div>
-              </div>
+              <?php if ( function_exists( 'easingslider' ) ) { easingslider( 186 ); } ?>
 
             </div>
           </div>
           <!-- .Mini-banner-ads -->
-          <div class="news-block padding-15 bg-white bd-opinion mb-40">
+          <div class="news-block padding-15 bg-white bd-opinion separacion">
             <h2 class="block-opinion mb-40">OPINIóN</h2>
             <?php query_posts('category_name=opinion&showposts=3'); ?>
             <div class="three-col-post">
@@ -388,7 +363,10 @@
                 <a href="<?php the_permalink(); ?>">
                   <div class="col-lg-4">
                     <div class="card mp-40">
-                      <?php the_post_thumbnail(); ?>
+                      <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
+                      $url = wp_get_attachment_url( $post_thumbnail_id);
+                      ?>
+                      <div class="img-post-opinion" style="background-image:url(<?php echo $url; ?>);"></div>
                       <h4><?php the_title(); ?></h4>
                       <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
                     </div>
@@ -399,7 +377,7 @@
             </div>
           </div>
           <!-- banner-ads -->
-          <div class="banner-in-content bg-white bd-ads ov-hidden mb-20">
+          <div class="banner-in-content bg-white bd-ads ov-hidden">
             <?php if ( function_exists( 'easingslider' ) ) { easingslider( 183 ); } ?>
           </div>
           <!-- banner-ads -->

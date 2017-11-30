@@ -4,7 +4,7 @@
   centerPadding: '180px',
   slidesToShow: 1,
   arrows: true,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2000,
   prevArrow: jQuery('.prev-btn'),
   nextArrow: jQuery('.next-btn'),

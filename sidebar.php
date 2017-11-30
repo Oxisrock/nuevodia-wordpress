@@ -1,4 +1,4 @@
-<aside id="sidebar" class="col-md-4 sm-padding">
+<aside id="sidebar" class="sidebar-widgets m-padding">
   <div class="sidebar-wrap">
 
   <!-- <div class="widget">
@@ -18,4 +18,5 @@
   <?php  }?>
 </div>
 </aside><!-- /#sidebar -->
+</div>
 </div>
