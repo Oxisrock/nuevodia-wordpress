@@ -55,7 +55,7 @@
                       <?php the_post_thumbnail(); ?>
                       <figcaption>
                         <h2 class="title"><?php the_title(); ?></h2>
-                        <h3><?php the_time( get_option('date_format') ); ?> ,| <?php the_time( get_option('time') ); ?> </h3>
+                        <h3><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></h3>
                         <p><?php the_excerpt(); ?></p>
                         <a href="<?php the_permalink(); ?>">Ver mas</a>
                       </figcaption>
@@ -69,7 +69,7 @@
                         <?php the_post_thumbnail(); ?>
                         <figcaption>
                           <h2 class="title"><?php the_title(); ?></h2>
-                          <p><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></h3>
+                          <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
                             <a href="<?php the_permalink(); ?>">Ver mas</a>
                           </figcaption>
                         </figure>
@@ -96,7 +96,7 @@
                         <?php the_post_thumbnail(); ?>
                         <figcaption>
                           <h2 class="title" ><?php the_title(); ?></h2>
-                          <h3><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></h3>
+                          <h3><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></h3>
                           <p><?php the_excerpt(); ?></p>
                           <a href="<?php the_permalink(); ?>">Ver mas</a>
                         </figcaption>
@@ -110,7 +110,7 @@
                           <?php the_post_thumbnail(); ?>
                           <figcaption>
                             <h2 class="title"><?php the_title(); ?></h2>
-                            <p><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></p>
+                            <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
                             <a href="<?php the_permalink(); ?>">Ver mas</a>
                           </figcaption>
                         </figure>
@@ -161,7 +161,7 @@
                         <?php the_post_thumbnail(); ?>
                         <figcaption>
                           <h2 class="title"><?php the_title(); ?></h2>
-                          <h3><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></h3>
+                          <h3><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></h3>
                           <p><?php the_excerpt(); ?></p>
                           <a href="<?php the_permalink(); ?>">Ver mas</a>
                         </figcaption>
@@ -175,7 +175,7 @@
                           <?php the_post_thumbnail(); ?>
                           <figcaption>
                             <h2 class="title"><?php the_title(); ?></h2>
-                            <p><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></p>
+                            <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
                             <a href="<?php the_permalink(); ?>">Ver mas</a>
                           </figcaption>
                         </figure>
@@ -202,7 +202,7 @@
                         <?php the_post_thumbnail(); ?>
                         <figcaption>
                           <h2 class="title"><?php the_title(); ?></h2>
-                          <h3><?php the_time( get_option('date_format') ); ?> | <?php the_time( get_option('time') ); ?></h3>
+                          <h3><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></h3>
                           <p><?php the_excerpt(); ?></p>
                           <a href="<?php the_permalink(); ?>">Ver mas</a>
                         </figcaption>
@@ -216,7 +216,7 @@
                           <?php the_post_thumbnail(); ?>
                           <figcaption>
                             <h2 class="title"><?php the_title(); ?></h2>
-                            <p><?php the_time( get_option('date_format') ); ?></p>
+                            <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
                             <a href="<?php the_permalink(); ?>">Ver mas</a>
                           </figcaption>
                         </figure>
@@ -267,7 +267,7 @@
                         <?php the_post_thumbnail(); ?>
                         <figcaption>
                           <h2 class="title"><?php the_title(); ?></h2>
-                          <h3><?php the_time( get_option('date_format') ); ?></h3>
+                          <h3><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></h3>
                           <p><?php the_excerpt(); ?></p>
                           <a href="<?php the_permalink(); ?>">Ver mas</a>
                         </figcaption>
@@ -281,7 +281,7 @@
                           <?php the_post_thumbnail(); ?>
                           <figcaption>
                             <h2 class="title"><?php the_title(); ?></h2>
-                            <p class="titlelast"><?php the_time( get_option('date_format') ); ?></p>
+                            <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
                             <a href="<?php the_permalink(); ?>">Ver mas</a>
                           </figcaption>
                         </figure>
@@ -297,7 +297,7 @@
           </div>
           <div class="esp">
             <div class="news-block bd-espectaculos mb-40 padding-15 ml-5">
-              <h2 class="block-espectaculos mb-40">ESPECTACULOS</h2>
+              <h2 class="block-espectaculos mb-40">ESPECTÁCULOS</h2>
               <?php $count = 1;?>
               <?php query_posts('category_name=espectaculos&showposts=3'); ?>
               <div class="three-col-post">
@@ -306,13 +306,16 @@
                     <div class="">
                       <div class="card mp-40">
                         <?php if ($count == 1) : ?>
-                          <?php the_post_thumbnail(); ?>
+                          <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
+                          $url = wp_get_attachment_url( $post_thumbnail_id);
+                          ?>
+                          <div class="img-post-espectaculos" style="background-image: url(<?php echo $url ?>);"></div>
                           <h4><?php the_title(); ?></h4>
-                          <p><i class="fa fa-calendar-o" aria-hidden="true"></i></p>
+                          <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
                           <?php $count++; ?>
                         <?php else : ?>
                           <h4><?php the_title(); ?></h4>
-                          <p><i class="fa fa-calendar-o" aria-hidden="true"></i></p>
+                          <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
                         <?php endif; ?>
                       </div>
                     </div>
@@ -322,7 +325,7 @@
               </div>
             </div>
             <div class="news-block bd-ciencia mb-40 padding-15 md-5">
-              <h2 class="block-ciencia mb-40">CIENCIA Y TECNOLOGIA</h2>
+              <h2 class="block-ciencia mb-40">CIENCIA Y TECNOLOGÍA</h2>
               <?php $count = 1;?>
               <?php query_posts('category_name=ciencia-y-tecnologia&showposts=3'); ?>
               <div class="three-col-post">
@@ -331,7 +334,10 @@
                     <div class="">
                       <div class="card mp-40">
                         <?php if ($count == 1) : ?>
-                          <?php the_post_thumbnail(); ?>
+                          <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
+                          $url = wp_get_attachment_url( $post_thumbnail_id);
+                          ?>
+                          <div class="img-post-ciencia" style="background-image: url(<?php echo $url ?>);"></div>
                           <h4><?php the_title(); ?></h4>
                           <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
                           <?php $count++; ?>
@@ -384,12 +390,12 @@
                     <div class="card mp-40">
                       <?php the_post_thumbnail(); ?>
                       <h4><?php the_title(); ?></h4>
-                      <p><?php the_time( get_option('date_format') ); ?> </p>
+                      <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
                     </div>
                   </div>
                 </a>
               <?php endwhile; endif; ?>
-              
+
             </div>
           </div>
           <!-- banner-ads -->

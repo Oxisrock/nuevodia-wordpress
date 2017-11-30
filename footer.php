@@ -26,7 +26,7 @@
             </div>
             <?php  }?>
           </div><!-- widget 2 -->
-          <div class="footer-wd-25">
+          <div class="footer-wd-20 footer-face">
             <?php
             if (is_active_sidebar('main_footer_face')) {
               dynamic_sidebar('main_footer_face');
@@ -37,7 +37,7 @@
               </div>
               <?php  }?>
             </div><!-- widget 2 -->
-            <div class="footer-wd-35">
+            <div class="footer-wd-20 footer-mr-0">
               <a href="index.php" class="footer-logo"><img src="http://localhost/nuevodia/wp-content/uploads/2017/11/logo-light.png" alt="NuevoDia"></a>
               <?php
               if (is_active_sidebar('main_footer_home')) {

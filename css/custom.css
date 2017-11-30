@@ -116,25 +116,14 @@
     background-color: #ef2769;
     content: '';
     height: 10px;
-    width: 20%;
+    width: 50%;
     position: absolute;
     left: 0;
     bottom: -8px;
 }
 .bd-espectaculos {
   border: 2px solid #ef2769;
-}
-.block-espectaculos:before {
-    background-color: #ef2769;
-    content: '';
-    height: 10px;
-    width: 20%;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-}
-.bd-espectaculos {
-  border: 2px solid #ef2769;
+  width: 50%!important;
 }
 .block-ciencia:before {
     background-color: #222;
@@ -147,9 +136,7 @@
 }
 .bd-ciencia {
   border: 2px solid #222;
-}
-.bd-ciencia {
-  border: 2px solid #222;
+  width: 50%!important;
 }
 .esp {
   display: flex!important;
@@ -317,16 +304,19 @@ figure.effect-marley h3 {
   background-position:top!important;
 }
 /*formatiando imagenes*/
-.bd-espectaculos img {
+.img-post-espectaculos {
+  background-size: cover!important;
+  background-position: center!important;
   width: 100%!important;
-  height: auto!important;
+  height: 300px!important;
+}
+.img-post-ciencia {
+  background-size: cover!important;
+  background-position: center!important;
+  width: 100%!important;
+  height: 300px!important;
 }
 
-.bd-ciencia img {
-  width: 100%!important;
-  height: 100%!important;
-  object-fit: cover!important;
-}
 .bd-opinion img {
       width: 100%!important;
       height: 100%!important;
@@ -342,13 +332,19 @@ footer {
 }
 
 footer .footer-wd-20 {
-width: 20%!important;
-}
-footer .footer-wd-25 {
 width: 25%!important;
 }
-footer .footer-wd-35 {
-width: 35%!important;
+footer .footer-wd-20 h3 {
+font-size: 2em!important;
+}
+footer .footer-wd-20 a:hover {
+  color: #ef8a27!important;
+}
+footer .footer-face {
+  margin-right: 8%!important;
+}
+#text-6 p {
+  text-align: left!important;
 }
 footer .footer-items {
   display: flex!important;
@@ -373,10 +369,13 @@ footer .single-sidebar h3:before, .single-widget h3:before {
   margin-bottom: 1em!important;
 }
 .logos_footer img {
-  object-fit: cover!important;
+  width: 25%!important;
+  height: 10%!important;
 }
 .derechos
 {
   display: flex!important;
   justify-content: center!important;
+  padding-top: 2em!important;
+  padding-bottom: 2em!important;
 }
