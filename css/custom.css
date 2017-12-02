@@ -783,7 +783,7 @@ align-content: space-between!important;
   align-items: center!important;
 }
 .post-relationship {
-  width: 48%!important;
+  width: 30%!important;
   margin-right:1em!important;
   margin-bottom: 1em!important;
   border: 2px solid #e2e2e2!important;
@@ -853,9 +853,9 @@ align-content: space-between!important;
 .category-one #carrusel .slider-img {
   height: 300px!important;
 }
-.category-section-one {
-  display: flex!important;
-}
 .category-section-two {
   display: flex!important;
+}
+.relationship img {
+  height: 300px!important;
 }
