@@ -783,7 +783,7 @@ align-content: space-between!important;
   align-items: center!important;
 }
 .post-relationship {
-  width: 30%!important;
+  width: 40%!important;
   margin-right:1em!important;
   margin-bottom: 1em!important;
   border: 2px solid #e2e2e2!important;
@@ -856,6 +856,6 @@ align-content: space-between!important;
 .category-section-two {
   display: flex!important;
 }
-.relationship img {
+.category-one .relationship img {
   height: 300px!important;
 }
