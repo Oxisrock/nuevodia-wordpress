@@ -42,7 +42,6 @@
       <div class="category-post-others separacion-top">
         <div class="category-section-one separacion-top">
           <?php $counts = 1;?>
-            <?php query_posts('showposts=9'); ?>
         <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
           <?php $post_views = get_post_views(get_the_ID());?>
           <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
@@ -69,9 +68,6 @@
               <?php endif; ?>
         <?php endwhile; endif; ?>
       </div>
-      </div>
-      <div class="banner bg-white separacion">
-        <?php if ( function_exists( 'easingslider' ) ) { easingslider( 180 ); } ?>
       </div>
     </div>
 
