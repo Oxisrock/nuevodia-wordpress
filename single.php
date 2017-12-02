@@ -46,6 +46,7 @@
 				<?php echo get_avatar( get_the_author_meta('email'), '80' ); ?>
 				<div class="thumbnail-author-img" style="background: url(<?php echo get_avatar( get_the_author_meta('email'), '80' ); ?>)">
 				</div>
+				<div class="author-social text-center">
 				<!-- <?php echo get_avatar( get_the_author_meta('email'), '80' ); ?> -->
 				<?php
 	                // FACEBOOK
@@ -67,6 +68,7 @@
 	                }
 	                ?>
 			</div>
+		</div>
 			<div class="description-author">
 				<h3><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></h3>
 				<p><?php the_author_meta('description'); ?></p>

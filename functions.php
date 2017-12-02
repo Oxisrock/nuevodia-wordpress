@@ -233,4 +233,21 @@ function dc_social_sharing_buttons($content)
 
 add_filter( 'the_content', 'dc_social_sharing_buttons',0);
 
+function show_category_posts( $atts ){
+    extract(shortcode_atts(array('cat'=> ''), $atts));
+    query_posts('cat='.$cat.'&orderby;=dateℴ=ASC&posts;_per_page=-1');
+    if ( have_posts() ){
+        $content = '<ul>';
+        while ( have_posts() ){
+            the_post();
+            $content .= the_title('<li><a href="'.get_permalink().'">', '</a></li>', true);
+        }
+        $content .= '</ul>';
+    }
+    //Reset query
+    wp_reset_query();
+    return $content;
+}
+add_shortcode('mostrar_cat', 'show_category_posts');
+
 ?>
