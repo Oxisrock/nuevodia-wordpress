@@ -43,9 +43,9 @@
 									<br>
 									<div class="col-xs-12 xs-padding">
 											<ul class="footer-social text-center xs-text-center">
-													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-													<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+													<li><a href="#"><i class="fa fa-facebook fa-3x"></i></a></li>
+													<li><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+													<li><a href="#"><i class="fa fa-instagram fa-3x"></i></a></li>
 											</ul>
 									</div><!-- /.site-branding -->
 
