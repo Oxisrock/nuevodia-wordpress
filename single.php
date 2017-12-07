@@ -5,7 +5,7 @@
 	</div>
 	<div class="container-post">
 		<div class="post">
-			<section class="separacion main-content">
+			<section class="separacion main-contento">
 
 				<?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
 					<?php $post_views = get_post_views(get_the_ID());?>
@@ -40,7 +40,7 @@
 
 		<?php endwhile; endif; ?>
 	</section><!-- /#main-content -->
-	<section class="separacion main-content">
+	<section class="separacion main-contento">
 		<div class="author-info">
 			<div class="thumbnail-author">
 				<?php echo get_avatar( get_the_author_meta('email'), '80' ); ?>
@@ -75,7 +75,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="separacion main-content">
+	<section class="separacion main-contento">
 		<div class="relacionadas">
 			<h3>NOTICIAS RELACIONADAS</h3>
 			<div class="post-relations">
@@ -105,19 +105,9 @@
 				</div>
 			</div>
 		</section>
-		<div class="banner bg-white separacion">
-			<?php if ( function_exists( 'easingslider' ) ) { easingslider( 180 ); } ?>
-		</div>
 	</div>
 		<aside id="sidebar" class="sidebar-widgets m-padding">
 		  <div class="sidebar-wrap">
-
-		  <!-- <div class="widget">
-		    <h3 class="widget-title">Widget de texto</h3>
-		    <div class="widget-content">
-		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		    </div>
-		  </div> -->
 		  <?php
 		    if (is_active_sidebar('sidebar_post_page')) {
 		      dynamic_sidebar('sidebar_post_page');

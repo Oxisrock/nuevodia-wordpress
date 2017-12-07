@@ -540,10 +540,12 @@ align-content: space-between!important;
 
 .section-falcon {
   display: flex!important;
+  margin-bottom: 1em!important;
 }
 .section-falcon-one {
   width: 50%!important;
   height: 300px!important;
+  margin-left: 2em!important;
 }
 .section-falcon-one figure {
   width: 100%!important;
@@ -649,10 +651,6 @@ align-content: space-between!important;
   width: 100%!important;
   position: relative!important;
   align-items: center!important;
-}
-.main-content {
-  padding: 2em!important;
-  border: 2px solid #eee!important;
 }
 .title-post {
   background: #fff!important;
@@ -782,20 +780,52 @@ align-content: space-between!important;
   flex-wrap: wrap!important;
   align-items: center!important;
 }
-.post-relationship {
-  width: 40%!important;
+.category .post-relationship {
+  width: 31%!important;
   margin-right:1em!important;
   margin-bottom: 1em!important;
   border: 2px solid #e2e2e2!important;
 }
+.rejilla6 {
+  display: flex!important;
+  flex-direction: row!important;
+  flex-wrap: wrap!important;
+  align-items: center!important;
+  margin-right: -2em!important;
+}
+.post-relationship {
+  width: 31%!important;
+  margin-right:1em!important;
+  margin-bottom: 1em!important;
+  border: 2px solid #e2e2e2!important;
+}
+.col-md-3 {
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
 .post-relationship img {
   width: 100%!important;
-  height: 300px!important;
+  height: 200px!important;
+  object-fit: cover!important;
 }
 .post-relationship .titlelast {
   font-size: 1em!important;
   margin-top: 1em!important;
   height: 20%!important;
+}
+.category .post-relationship .titlelast {
+  font-size: 1em!important;
+  margin-top: 1em!important;
+  height: 20%!important;
+  margin-bottom: 2em!important;
+}
+.post-relationship-content {
+  text-align: center!important;
+  height: 88px!important;
+}
+.main-contento {
+  padding: 2em!important;
+  border: 1px solid #e2e2e2!important;
 }
 .author-info {
   display: flex!important;

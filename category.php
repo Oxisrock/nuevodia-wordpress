@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 <div class="container">
   <div class="banner bg-white separacion separacion-top">
-		<?php if ( function_exists( 'easingslider' ) ) { easingslider( 180 ); } ?>
-	</div>
+    <?php if ( function_exists( 'easingslider' ) ) { easingslider( 180 ); } ?>
+  </div>
   <span class="separacion-top"><?php the_category(); ?></span>
   <div class="category">
     <div class="category-one separacion-top">
@@ -41,21 +41,23 @@
       </div>
       <div class="category-post-others separacion-top">
         <div class="category-section-one separacion-top">
+          <div class="rejilla6">
           <?php $counts = 1;?>
-        <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
-          <?php $post_views = get_post_views(get_the_ID());?>
-          <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
-          $url = wp_get_attachment_url( $post_thumbnail_id);
-          ?>
-          <?php $counts++; ?>
-          <?php if ($counts >= 5): ?>
-              <div class="col-md-3 post-relationship">
+          <?php query_posts('showposts=9'); ?>
+          <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
+            <?php $post_views = get_post_views(get_the_ID());?>
+            <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
+            $url = wp_get_attachment_url( $post_thumbnail_id);
+            ?>
+            <?php $counts++; ?>
+            <?php if ($counts >= 5): ?>
+              <div class="post-relationship">
                 <a target="_blank" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
                   <?php if ( has_post_thumbnail() ) {
                     the_post_thumbnail();
                   }else{
                     ?>
-                    <img src="<?php bloginfo('template_url'); ?>/img/nombre-imagen-defecto.png" />
+                    <a target="_blank" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/nombre-imagen-defecto.png" /></a>
                     <?php
                   }
                   ?>
@@ -65,29 +67,103 @@
                   </div>
                 </a>
               </div>
-              <?php endif; ?>
-        <?php endwhile; endif; ?>
+            <?php endif; ?>
+          <?php endwhile; endif; ?>
+          <?wp_reset_query();?>
+        </div>
+        <div class="separacion">
+        <?php if ( function_exists( 'easingslider' ) ) { easingslider( 183 ); } ?>
       </div>
+      </div>
+      <div class="category-section-one separacion-top">
+        <div class="rejilla6">
+        <?php $counts = 1;?>
+        <?php query_posts('showposts=9'); ?>
+        <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
+          <?php $post_views = get_post_views(get_the_ID());?>
+          <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
+          $url = wp_get_attachment_url( $post_thumbnail_id);
+          ?>
+          <?php $counts++; ?>
+          <?php if ($counts >= 5): ?>
+            <div class="post-relationship">
+              <a target="_blank" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+                <?php if ( has_post_thumbnail() ) {
+                  the_post_thumbnail();
+                }else{
+                  ?>
+                  <a target="_blank" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/nombre-imagen-defecto.png" /></a>
+                  <?php
+                }
+                ?>
+                <div class="post-relationship-content">
+                  <p class="titlelast"><?php the_title(); ?></p>
+                  <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+                </div>
+              </a>
+            </div>
+          <?php endif; ?>
+        <?php endwhile; endif; ?>
+        <?wp_reset_query();?>
+      </div>
+      <div class="separacion">
+      <?php if ( function_exists( 'easingslider' ) ) { easingslider( 183 ); } ?>
+    </div>
+    </div>
+    <div class="category-section-one separacion-top">
+      <div class="rejilla6">
+      <?php $counts = 1;?>
+      <?php query_posts('showposts=9'); ?>
+      <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
+        <?php $post_views = get_post_views(get_the_ID());?>
+        <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
+        $url = wp_get_attachment_url( $post_thumbnail_id);
+        ?>
+        <?php $counts++; ?>
+        <?php if ($counts >= 5): ?>
+          <div class="post-relationship">
+            <a target="_blank" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+              <?php if ( has_post_thumbnail() ) {
+                the_post_thumbnail();
+              }else{
+                ?>
+                <a target="_blank" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/nombre-imagen-defecto.png" /></a>
+                <?php
+              }
+              ?>
+              <div class="post-relationship-content">
+                <p class="titlelast"><?php the_title(); ?></p>
+                <p class="separacion-top"><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+              </div>
+            </a>
+          </div>
+        <?php endif; ?>
+      <?php endwhile; endif; ?>
+      <?wp_reset_query();?>
+    </div>
+    <div class="separacion">
+    <?php if ( function_exists( 'easingslider' ) ) { easingslider( 183 ); } ?>
+  </div>
+  </div>
       </div>
     </div>
-
     <div class="category-two separacion-top">
       <aside id="sidebar" class="sidebar-widgets m-padding">
         <div class="sidebar-wrap">
 
-      <?php
-      if (is_active_sidebar('sidebar_post_page')) {
-        dynamic_sidebar('sidebar_post_page');
-      }else { ?>
-        <div class="single-sidebar">
-          <h3 class="fw-8 fz-18 tt-u mb-30"><?php _e('Buscar', 'apk'); ?></h3>
-          <?php get_search_form(); ?>
-        </div>
-        <?php  }?>
+          <?php
+          if (is_active_sidebar('sidebar_post_page')) {
+            dynamic_sidebar('sidebar_post_page');
+          }else { ?>
+            <div class="single-sidebar">
+              <h3 class="fw-8 fz-18 tt-u mb-30"><?php _e('Buscar', 'apk'); ?></h3>
+              <?php get_search_form(); ?>
+            </div>
+            <?php  }?>
+          </div>
+        </aside><!-- /#sidebar -->
       </div>
-    </aside><!-- /#sidebar -->
+    </div>
   </div>
-</div>
-</div>
 
-<?php get_footer(); ?>
+  <?php get_footer(); ?>
