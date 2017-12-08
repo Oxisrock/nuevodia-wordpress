@@ -928,6 +928,7 @@ align-content: space-between!important;
 .title-author h1 {
   font-size: 400%!important;
   color: #2e2e2e!important;
+  text-align: right!important;
 }
 .header-author article{
   display: flex;
@@ -968,4 +969,10 @@ align-content: space-between!important;
 }
 .author .content-post {
   width: 70%!important;
+}
+.recient {
+  float:left!important;
+}
+.previous {
+  float:right!important;
 }
