@@ -4,6 +4,7 @@
     <div class="title-author">
       <h1><?php the_author(); ?></h1>
     </div>
+    <h2>Entradas Publicadas</h2>
   </div>
   <?php $counts = 1;?>
   <div class="one-post-author separacion">
