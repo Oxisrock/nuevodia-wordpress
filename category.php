@@ -13,7 +13,7 @@
         </a>
         <div id="carrusel">
           <?php $count = 1;?>
-          <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
+          <?php while (have_posts()) : the_post(); ?>
             <?php $post_views = get_post_views(get_the_ID());?>
             <?php if ($count <= 3) : ?>
               <div class="carousel">
@@ -33,7 +33,7 @@
               </div>
               <?php $count++; ?>
             <?php endif; ?>
-          <?php endwhile; endif; ?>
+          <?php endwhile;?>
           <?wp_reset_query();?>
           <!-- <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p> -->
 
@@ -44,7 +44,7 @@
           <div class="rejilla6">
           <?php $counts = 1;?>
           <?php query_posts('showposts=9'); ?>
-          <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
+          <?php while (have_posts()) : the_post(); ?>
             <?php $post_views = get_post_views(get_the_ID());?>
             <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
             $url = wp_get_attachment_url( $post_thumbnail_id);
@@ -63,12 +63,12 @@
                   ?>
                   <div class="post-relationship-content">
                     <p class="titlelast"><?php the_title(); ?></p>
-                    <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+                    <p><?php the_time( get_option('date_format') ); ?></p>
                   </div>
                 </a>
               </div>
             <?php endif; ?>
-          <?php endwhile; endif; ?>
+          <?php endwhile;?>
           <?wp_reset_query();?>
         </div>
         <div class="separacion">
@@ -79,7 +79,7 @@
         <div class="rejilla6">
         <?php $counts = 1;?>
         <?php query_posts('showposts=9'); ?>
-        <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
+        <?php while (have_posts()) : the_post(); ?>
           <?php $post_views = get_post_views(get_the_ID());?>
           <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
           $url = wp_get_attachment_url( $post_thumbnail_id);
@@ -98,12 +98,12 @@
                 ?>
                 <div class="post-relationship-content">
                   <p class="titlelast"><?php the_title(); ?></p>
-                  <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+                  <p><?php the_time( get_option('date_format') ); ?></p>
                 </div>
               </a>
             </div>
           <?php endif; ?>
-        <?php endwhile; endif; ?>
+        <?php endwhile;?>
         <?wp_reset_query();?>
       </div>
       <div class="separacion">
@@ -114,7 +114,7 @@
       <div class="rejilla6">
       <?php $counts = 1;?>
       <?php query_posts('showposts=9'); ?>
-      <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
+      <?php while (have_posts()) : the_post(); ?>
         <?php $post_views = get_post_views(get_the_ID());?>
         <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
         $url = wp_get_attachment_url( $post_thumbnail_id);
@@ -133,21 +133,22 @@
               ?>
               <div class="post-relationship-content">
                 <p class="titlelast"><?php the_title(); ?></p>
-                <p class="separacion-top"><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+                <p class="separacion-top"><?php the_time( get_option('date_format') ); ?></p>
               </div>
             </a>
           </div>
         <?php endif; ?>
-      <?php endwhile; endif; ?>
+      <?php endwhile;?>
       <?wp_reset_query();?>
     </div>
     <div class="separacion">
     <?php if ( function_exists( 'easingslider' ) ) { easingslider( 183 ); } ?>
   </div>
   </div>
+
       </div>
     </div>
-    <div class="category-two separacion-top">
+    <div class="category-two separacion-top visible-md visible-lg">
       <aside id="sidebar" class="sidebar-widgets m-padding">
         <div class="sidebar-wrap">
 

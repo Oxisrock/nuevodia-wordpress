@@ -60,24 +60,24 @@
                       <figure class="effect-marley">
                         <?php the_post_thumbnail(); ?>
                         <figcaption>
-                          <h2 class="title"><?php the_title(); ?></h2>
-                          <h3><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></h3>
-                          <p><?php the_excerpt(); ?></p>
+                          <h2 class="text-left"><?php the_title(); ?></h2>
+                          <h3 class="text-left"><?php the_time( get_option('date_format') ); ?></h3>
+                          <p class="text-left"><?php the_excerpt(); ?></p>
                           <a href="<?php the_permalink(); ?>">Ver mas</a>
                         </figcaption>
                       </figure>
                       <?php $count++; ?>
                     </div>
                   </div>
-                  <div class="section-falcon-two">
+                  <div class="section-falcon-two visible-md visible-lg">
                   <?php else : ?>
                     <div class="sm-post-item">
                       <div class="grid-mini">
                         <figure class="effect-marley-mini">
                           <?php the_post_thumbnail(); ?>
                           <figcaption>
-                            <h2 class="title"><?php the_title(); ?></h2>
-                            <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+                            <h2 class="text-left"><?php the_title(); ?></h2>
+                            <p class="text-left"><?php the_time( get_option('date_format') ); ?></p>
                             <a href="<?php the_permalink(); ?>">Ver mas</a>
                           </figcaption>
                         </figure>
@@ -103,24 +103,24 @@
                       <figure class="effect-marley">
                         <?php the_post_thumbnail(); ?>
                         <figcaption>
-                          <h2 class="title"><?php the_title(); ?></h2>
-                          <h3><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></h3>
-                          <p><?php the_excerpt(); ?></p>
+                          <h2 class="text-left"><?php the_title(); ?></h2>
+                          <h3 class="text-left"><?php the_time( get_option('date_format') ); ?></h3>
+                          <p class="text-left"><?php the_excerpt(); ?></p>
                           <a href="<?php the_permalink(); ?>">Ver mas</a>
                         </figcaption>
                       </figure>
                       <?php $count++; ?>
                     </div>
                   </div>
-                  <div class="section-sucesos-two">
+                  <div class="section-sucesos-two visible-md visible-lg">
                     <div class="small-posts">
                   <?php else : ?>
                     <a href="<?php the_permalink(); ?>">
                         <div class="sm-post-item">
                           <?php the_post_thumbnail(); ?>
                           <div class="sm-post-content">
-                            <h4 class="titlelast fz-14"><?php the_title(); ?></h4>
-                            <p class="fz-12 fw-6 tt-u no-margin"><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+                            <h4 class="titlelast fz-14 text-left"><?php the_title(); ?></h4>
+                            <p class="fz-12 fw-6 tt-u no-margin text-left"><?php the_time( get_option('date_format') ); ?></p>
                           </div>
                         </div>
                     </a>
@@ -131,31 +131,17 @@
             </div>
           </div><!-- .news-block -->
           <!-- .Mini-banner-ads -->
-          <div class="two-col-posts separacion">
-            <div class="sm-post-item">
+          <div class="minibanners separacion">
+            <div class="sm-ads-item ov-hidden minibanner">
+              <?php if ( function_exists( 'easingslider' ) ) { easingslider( 184 ); } ?>
+            </div>
+            <div class="sm-ads-item ov-hidden minibanner2">
 
-              <div class="col-md-6 padding-1">
-                <div class="small-posts">
-                  <div class="sm-ads-item ov-hidden">
-                    <?php if ( function_exists( 'easingslider' ) ) { easingslider( 184 ); } ?>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-md-6 padding-1">
-                <div class="small-posts">
-                  <div class="sm-ads-item ov-hidden">
-
-                    <?php if ( function_exists( 'easingslider' ) ) { easingslider( 186 ); } ?>
-
-                  </div>
-
-                </div>
-              </div>
+              <?php if ( function_exists( 'easingslider' ) ) { easingslider( 186 ); } ?>
 
             </div>
           </div>
+          <!-- .Mini-banner-ads -->
           <div class="news-block padding-15 bg-white bd-nacionales separacion">
             <h2 class="block-nacionales mb-20">NACIONALES</h2>
             <?php query_posts('category_name=nacionales&showposts=4'); ?>
@@ -168,24 +154,24 @@
                       <figure class="effect-marley">
                         <?php the_post_thumbnail(); ?>
                         <figcaption>
-                          <h2 class="title"><?php the_title(); ?></h2>
-                          <h3><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></h3>
-                          <p><?php the_excerpt(); ?></p>
+                          <h2 class="text-left"><?php the_title(); ?></h2>
+                          <h3 class="text-left"><?php the_time( get_option('date_format') ); ?></h3>
+                          <p class="text-left"><?php the_excerpt(); ?></p>
                           <a href="<?php the_permalink(); ?>">Ver mas</a>
                         </figcaption>
                       </figure>
                       <?php $count++; ?>
                     </div>
                   </div>
-                  <div class="section-nacionales-two">
+                  <div class="section-nacionales-two visible-md visible-lg">
                     <div class="small-posts">
                   <?php else : ?>
                     <a href="<?php the_permalink(); ?>">
                         <div class="sm-post-item">
                           <?php the_post_thumbnail(); ?>
                           <div class="sm-post-content">
-                            <h4 class="titlelast fz-14"><?php the_title(); ?></h4>
-                            <p class="fz-12 fw-6 tt-u no-margin"><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+                            <h4 class="text-left titlelast fz-14"><?php the_title(); ?></h4>
+                            <p class="text-left fz-12 fw-6 tt-u no-margin"><?php the_time( get_option('date_format') ); ?></p>
                           </div>
                         </div>
                     </a>
@@ -223,7 +209,7 @@
                       <div class="img-post-inter" style="background-image:url(<?php echo $url; ?>);"></div>
                       </a>
                       <h4 class="text-left"><?php the_title(); ?></h4>
-                      <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+                      <p class="text-left"><?php the_time( get_option('date_format') ); ?></p>
                     </div>
                   </div>
                 <!-- </a> -->
@@ -243,8 +229,8 @@
             </div>
           </div>
           <!-- .Mini-banner-ads -->
-            <div class="news-block padding-15 bg-white bd-inter separacion">
-              <h2 class="block-inter mb-20">DEPORTES</h2>
+            <div class="news-block padding-15 bg-white bd-deportes separacion">
+              <h2 class="block-deportes mb-20">DEPORTES</h2>
               <?php query_posts('category_name=deportes&showposts=3'); ?>
               <?php $count = 1;?>
               <div class="section-falcon">
@@ -255,24 +241,24 @@
                         <figure class="effect-marley">
                           <?php the_post_thumbnail(); ?>
                           <figcaption>
-                            <h2 class="title"><?php the_title(); ?></h2>
-                            <h3><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></h3>
-                            <p><?php the_excerpt(); ?></p>
+                            <h2 class="text-left"><?php the_title(); ?></h2>
+                            <h3 class="text-left"><?php the_time( get_option('date_format') ); ?></h3>
+                            <p class="text-left"><?php the_excerpt(); ?></p>
                             <a href="<?php the_permalink(); ?>">Ver mas</a>
                           </figcaption>
                         </figure>
                         <?php $count++; ?>
                       </div>
                     </div>
-                    <div class="section-falcon-two">
+                    <div class="section-falcon-two visible-md visible-lg">
                     <?php else : ?>
                       <div class="sm-post-item">
                         <div class="grid-mini">
                           <figure class="effect-marley-mini">
                             <?php the_post_thumbnail(); ?>
                             <figcaption>
-                              <h2 class="title"><?php the_title(); ?></h2>
-                              <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+                              <h2 class="text-left"><?php the_title(); ?></h2>
+                              <p class="text-left"><?php the_time( get_option('date_format') ); ?></p>
                               <a href="<?php the_permalink(); ?>">Ver mas</a>
                             </figcaption>
                           </figure>
@@ -301,12 +287,14 @@
                           $url = wp_get_attachment_url( $post_thumbnail_id);
                           ?>
                           <div class="img-post-espectaculos" style="background-image: url(<?php echo $url ?>);"></div>
-                          <h4><?php the_title(); ?></h4>
-                          <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+                          <h4 class="text-left"><?php the_title(); ?></h4>
+                          <p class="text-left"><?php the_time( get_option('date_format') ); ?></p>
                           <?php $count++; ?>
                         <?php else : ?>
-                          <h4><?php the_title(); ?></h4>
-                          <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+                          <div class="visible-md visible-lg">
+                          <h4 class="text-left"><?php the_title(); ?></h4>
+                          <p class="text-left"><?php the_time( get_option('date_format') ); ?></p>
+                        </div>
                         <?php endif; ?>
                       </div>
                     </div>
@@ -330,11 +318,13 @@
                           ?>
                           <div class="img-post-ciencia" style="background-image: url(<?php echo $url ?>);"></div>
                           <h4><?php the_title(); ?></h4>
-                          <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+                          <p><?php the_time( get_option('date_format') ); ?></p>
                           <?php $count++; ?>
                         <?php else : ?>
-                          <h4><?php the_title(); ?></h4>
-                          <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+                          <div class="visible-md visible-lg">
+                          <h4 class="text-left"><?php the_title(); ?></h4>
+                          <p class="text-left" ><?php the_time( get_option('date_format') ); ?></p>
+                        </div>
                         <?php endif; ?>
                       </div>
                     </div>
@@ -381,8 +371,8 @@
                       <div class="img-post-opinion" style="background-image:url(<?php echo $url; ?>);"></div>
                     </a>
                       <h4 class="text-left"><?php the_title(); ?></h4>
-                      <p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
-                      <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><i class="fa fa-user-o"></i> <?php the_author(); ?> </a>
+                      <p class="text-left"><?php the_time( get_option('date_format') ); ?></p>
+                      <a class="text-left" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><i class="fa fa-user-o"></i> <?php the_author(); ?> </a>
                     </div>
                   </div>
                 <!-- </a> -->

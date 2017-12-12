@@ -3,7 +3,7 @@
 <footer class="footer-wrapper bg-dark">
     <div class="container">
       <div class="footer-items">
-      <div class="footer-wd-20">
+      <div class="footer-wd-20 visible-md visible-lg">
 
         <?php
         if (is_active_sidebar('main_footer')) {
@@ -26,7 +26,7 @@
             </div>
             <?php  }?>
           </div><!-- widget 2 -->
-          <div class="footer-wd-20 footer-face">
+          <div class="footer-wd-20 footer-face visible-md visible-lg">
             <?php
             if (is_active_sidebar('main_footer_face')) {
               dynamic_sidebar('main_footer_face');
@@ -50,8 +50,8 @@
                 <?php  }?>
               </div><!-- widget 2 -->
             </div>
-            <div class="logos_footer">
-              <img src="http://localhost/nuevodia/wp-content/uploads/2017/11/client-1.png" class="img-responsive letraviva"></img><img src="http://localhost/nuevodia/wp-content/uploads/2017/11/client-2.png" class="img-responsive fundacion"></img>
+            <div class="logos_footer visible-md visible-lg">
+              <img src="http://localhost/nuevodia/wp-content/uploads/2017/11/client-1.png" class="img-responsive letraviva"><img src="http://localhost/nuevodia/wp-content/uploads/2017/11/client-2.png" class="img-responsive fundacion">
             </div>
             <div class="derechos">
               <a class="text-light">© Derechos Reservados EDITORIAL NUEVO DÍA C.A.Desarrollado por Slice Group </a>

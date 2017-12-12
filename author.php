@@ -73,7 +73,7 @@
         </div>
       <?php endif; ?>
     </div>
-    <div class="asidebar-author">
+    <div class="asidebar-author visible-md visible-lg">
       <aside id="sidebar" class="sidebar-widgets m-padding">
         <div class="sidebar-wrap">
           <?php

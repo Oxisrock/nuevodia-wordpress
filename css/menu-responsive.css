@@ -1,0 +1,186 @@
+.menu-content {
+  height: 100vh;
+}
+.heading
+{
+background:#2e2e30!important;
+padding-top:20px;
+}
+.navbar-nav li a {
+border-top: 1px solid #af141400;
+}
+
+.navbar-nav {
+margin: 0;
+}
+.fa
+{
+ line-height: none;
+}
+.logo
+{
+width: 40%;
+margin-left: 30px;
+}
+.navbar-toggle
+
+{
+margin-right: 30px;
+}
+.navbar-inverse .navbar-nav>li>a {
+color: #fff;
+}
+
+.rounde-icon
+{
+border-radius: 50%;
+background: blue;
+width: 30px;
+   margin-top: 9px;
+   margin-right: 10px;
+   height: 40px;
+}
+
+.search-form button.submit {
+background: none;
+width: 30px;
+height: 100%;
+line-height: 100%;
+text-align: center;
+color: #fff;
+font-size: 16px;
+position: absolute;
+right: 10px;
+top: 0;
+}
+.icon-borde
+{
+background:#ef8a27;
+border-radius: 100%;
+color: #ffffff;
+line-height: 2.5em;
+width: 2.5em;
+margin: 10px;
+
+}
+.icon-borde1
+{
+background:#555555;
+border-radius: 100%;
+color: #ffffff;
+line-height: 2.5em;
+width: 2.5em;
+margin: 10px;
+}
+.search-form input[type="text"] {
+background-color: rgba(20,20,20,1);
+display: block;
+padding: 10px 15px;
+padding-right: 40px;
+width: 100%;
+border: none;
+border-radius: 3px;
+color: #fff;
+}
+.icon-borde2
+{
+background:#3a7521;
+border-radius: 100%;
+color: #ffffff;
+line-height: 2.5em;
+width: 2.5em;
+margin: 10px;
+}
+.icon-borde3
+{
+background:#22acde;
+border-radius: 100%;
+color: #ffffff;
+line-height: 2.5em;
+width: 2.5em;
+margin: 10px;
+}
+.icon-borde4
+{
+background:#ef2769;
+border-radius: 100%;
+color: #ffffff;
+line-height: 2.5em;
+width: 2.5em;
+margin: 10px;
+}
+.icon-borde5
+{
+background:#222222;
+border-radius: 100%;
+color: #ffffff;
+line-height: 2.5em;
+width: 2.5em;
+margin: 10px;
+}
+.new-menu-responsive a
+{
+  color: #fff;
+text-decoration: none;
+font-size: 2em;
+
+}
+.new-menu-responsive .fa {
+  color: #fff;
+}
+.navbar-header .fa {
+  color: #fff;
+}
+
+/* Demo 2 */
+#demo-2 input[type=search] {
+	width: 0px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+#demo-2 input[type=search]:hover {
+	background-color: #fff;
+}
+#demo-2 input[type=search]:focus {
+	width: 180px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+#demo-2 input:-moz-placeholder {
+	color: transparent;
+}
+#demo-2 input::-webkit-input-placeholder {
+	color: transparent;
+}
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none;
+}
+
+
+input[type=search] {
+	/*background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;*/
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}

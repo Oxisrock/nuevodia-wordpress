@@ -21,15 +21,11 @@ Text Domain: apk
 
 @import url('css/main.css');
 
-@import url('css/responsive.css');
-
 @import url('css/slick.css');
 
 @import url('css/base.css');
 
 @import url('css/hovers.css');
-
-@import url('css/custom.css');
 
 @import url('css/slider/owl.carousel.css');
 
@@ -37,6 +33,11 @@ Text Domain: apk
 
 @import url('css/slider.css');
 
+@import url('css/custom.css');
+
+@import url('css/responsive.css');
+
+@import url('css/menu-responsive.css');
 /*<link rel="stylesheet" href="css/themify-icons.css">
 <link rel="stylesheet" href="css/animate.min.css">
 <link rel="stylesheet" href="css/elegant-line-icons.css">

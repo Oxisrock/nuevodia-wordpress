@@ -4,7 +4,7 @@
   centerPadding: '180px',
   slidesToShow: 1,
   arrows: true,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000,
   prevArrow: jQuery('.prev-btn'),
   nextArrow: jQuery('.next-btn'),
@@ -70,13 +70,55 @@
 jQuery('.slider_post').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000,
   arrows: true,
   speed: 1000,
   prevArrow: jQuery('.prev-btn-opinion'),
   nextArrow: jQuery('.next-btn-opinion'),
   dots: false,
+  responsive: [
+    {
+      breakpoint: 1681,
+      settings: {
+        arrows: true,
+        autoplay: true,
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 1501,
+      settings: {
+        arrows: true,
+        autoplay: true,
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 1025,
+      settings: {
+        arrows: true,
+        autoplay: true,
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        autoplay: true,
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        autoplay: true,
+        slidesToShow: 1
+      }
+    }
+  ]
 
 });
 jQuery('.slider_post_inter').slick({
@@ -89,6 +131,48 @@ jQuery('.slider_post_inter').slick({
   prevArrow: jQuery('.prev-btn-inter'),
   nextArrow: jQuery('.next-btn-inter'),
   dots: false,
+  responsive: [
+    {
+      breakpoint: 1681,
+      settings: {
+        arrows: true,
+        autoplay: true,
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 1501,
+      settings: {
+        arrows: true,
+        autoplay: true,
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 1025,
+      settings: {
+        arrows: true,
+        autoplay: true,
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        autoplay: true,
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        autoplay: true,
+        slidesToShow: 1
+      }
+    }
+  ]
 
 });
 

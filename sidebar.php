@@ -1,4 +1,4 @@
-<aside id="sidebar" class="sidebar-widgets m-padding">
+<aside id="sidebar" class="sidebar-widgets m-padding visible-md visible-lg">
   <div class="sidebar-wrap">
 
   <!-- <div class="widget">

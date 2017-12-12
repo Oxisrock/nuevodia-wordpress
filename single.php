@@ -19,9 +19,9 @@
 						<div class="img-post separacion" style="background-image:url(<?php echo $url; ?>);">
 							<div class="title-post"><h1><?php the_title(); ?></h1></div>
 						</div>
-						<header class="atributes-post">
+						<div class="atributes-post" style="padding-top: 2em;">
 							<p><i class="fa fa-calendar-o"></i><?php the_time( get_option('date_format') ); ?></p> <p><i class="fa fa-user"></i> <?php the_author(); ?></p> <?php if (the_tags) : ?><p><i class="fa fa-bookmark-o"></i> <?php the_tags(); ?></p><?php endif; ?>
-						</header>
+						</div>
 
 						<div class="post-content">
 							<?php the_content(); ?>
@@ -46,6 +46,10 @@
 				<?php echo get_avatar( get_the_author_meta('email'), '80' ); ?>
 				<div class="thumbnail-author-img" style="background: url(<?php echo get_avatar( get_the_author_meta('email'), '80' ); ?>)">
 				</div>
+		</div>
+			<div class="description-author">
+				<h3><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></h3>
+				<p><?php the_author_meta('description'); ?></p>
 				<div class="author-social text-center">
 				<!-- <?php echo get_avatar( get_the_author_meta('email'), '80' ); ?> -->
 				<?php
@@ -68,10 +72,6 @@
 	                }
 	                ?>
 			</div>
-		</div>
-			<div class="description-author">
-				<h3><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></h3>
-				<p><?php the_author_meta('description'); ?></p>
 			</div>
 		</div>
 	</section>
@@ -96,7 +96,7 @@
 							?>
 							<div class="post-relationship-content">
 								<p class="titlelast"><?php the_title(); ?></p>
-								<p><i class="fa fa-calendar-o" aria-hidden="true"></i> <?php the_time( get_option('date_format') ); ?></p>
+								<p><?php the_time( get_option('date_format') ); ?></p>
 							</div>
 						</a>
 					</div>
@@ -106,7 +106,7 @@
 			</div>
 		</section>
 	</div>
-		<aside id="sidebar" class="sidebar-widgets m-padding">
+		<aside id="sidebar" class="sidebar-widgets m-padding visible-md visible-lg">
 		  <div class="sidebar-wrap">
 		  <?php
 		    if (is_active_sidebar('sidebar_post_page')) {
