@@ -3,7 +3,26 @@
   <div class="banner bg-white separacion separacion-top">
     <?php if ( function_exists( 'easingslider' ) ) { easingslider( 180 ); } ?>
   </div>
-  <span class="separacion-top"><?php the_category(); ?></span>
+  <?php if (is_category('opinion')) : ?>
+<h2 class="block-opinion separacion-top mb-40">OPINIóN</h2>
+<?php elseif (is_category('falcon')) : ?>
+<h2 class="block-falcon separacion-top mb-20">FALCÓN</h2>
+<?php elseif (is_category('espectaculos')) : ?>
+<h2 class="block-espectaculos separacion-top mb-40">ESPECTÁCULOS</h2>
+<?php elseif (is_category('deportes')) : ?>
+<h2 class="block-deportes separacion-top mb-40">DEPORTES</h2>
+<?php elseif (is_category('sucesos')) : ?>
+<h2 class="block-sucesos separacion-top mb-40">SUCESOS</h2>
+<?php elseif (is_category('ciencia-y-tecnologia')) : ?>
+<h2 class="block-ciencia separacion-top mb-40">CIENCIA Y TECNOLOGÍA</h2>
+<?php elseif (is_category('nacionales')) : ?>
+<h2 class="block-nacionales separacion-top mb-40">NACIONALES</h2>
+<?php elseif (is_category('internacionales')) : ?>
+<h2 class="block-inter separacion-top mb-40">INTERNACIONALES</h2>
+<?php else : ?>
+<p>This is some generic text to describe all other category pages,
+I could be left blank</p>
+<?php endif; ?>
   <div class="category">
     <div class="category-one separacion-top">
       <div class="slider-nav">
@@ -34,7 +53,6 @@
               <?php $count++; ?>
             <?php endif; ?>
           <?php endwhile;?>
-          <?wp_reset_query();?>
           <!-- <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p> -->
 
         </div>
@@ -42,15 +60,11 @@
       <div class="category-post-others separacion-top">
         <div class="category-section-one separacion-top">
           <div class="rejilla6">
-          <?php $counts = 1;?>
-          <?php query_posts('showposts=9'); ?>
           <?php while (have_posts()) : the_post(); ?>
             <?php $post_views = get_post_views(get_the_ID());?>
             <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
             $url = wp_get_attachment_url( $post_thumbnail_id);
             ?>
-            <?php $counts++; ?>
-            <?php if ($counts >= 5): ?>
               <div class="post-relationship">
                 <a target="_blank" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
                   <?php if ( has_post_thumbnail() ) {
@@ -67,9 +81,7 @@
                   </div>
                 </a>
               </div>
-            <?php endif; ?>
           <?php endwhile;?>
-          <?wp_reset_query();?>
         </div>
         <div class="separacion">
         <?php if ( function_exists( 'easingslider' ) ) { easingslider( 183 ); } ?>
@@ -77,15 +89,11 @@
       </div>
       <div class="category-section-one separacion-top">
         <div class="rejilla6">
-        <?php $counts = 1;?>
-        <?php query_posts('showposts=9'); ?>
         <?php while (have_posts()) : the_post(); ?>
           <?php $post_views = get_post_views(get_the_ID());?>
           <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
           $url = wp_get_attachment_url( $post_thumbnail_id);
           ?>
-          <?php $counts++; ?>
-          <?php if ($counts >= 5): ?>
             <div class="post-relationship">
               <a target="_blank" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
                 <?php if ( has_post_thumbnail() ) {
@@ -102,9 +110,7 @@
                 </div>
               </a>
             </div>
-          <?php endif; ?>
         <?php endwhile;?>
-        <?wp_reset_query();?>
       </div>
       <div class="separacion">
       <?php if ( function_exists( 'easingslider' ) ) { easingslider( 183 ); } ?>
@@ -112,15 +118,11 @@
     </div>
     <div class="category-section-one separacion-top">
       <div class="rejilla6">
-      <?php $counts = 1;?>
-      <?php query_posts('showposts=9'); ?>
       <?php while (have_posts()) : the_post(); ?>
         <?php $post_views = get_post_views(get_the_ID());?>
         <?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
         $url = wp_get_attachment_url( $post_thumbnail_id);
         ?>
-        <?php $counts++; ?>
-        <?php if ($counts >= 5): ?>
           <div class="post-relationship">
             <a target="_blank" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
               <?php if ( has_post_thumbnail() ) {
@@ -137,9 +139,7 @@
               </div>
             </a>
           </div>
-        <?php endif; ?>
       <?php endwhile;?>
-      <?wp_reset_query();?>
     </div>
     <div class="separacion">
     <?php if ( function_exists( 'easingslider' ) ) { easingslider( 183 ); } ?>

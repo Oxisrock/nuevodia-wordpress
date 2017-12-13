@@ -7,20 +7,37 @@
 		<div class="post">
 			<section class="separacion main-contento">
 
+				<?php if (in_category('opinion')) : ?>
+			<h2 class="block-opinion separacion-top mb-40">OPINIóN</h2>
+		<?php elseif (in_category('falcon')) : ?>
+			<h2 class="block-falcon separacion-top mb-20">FALCÓN</h2>
+		<?php elseif (in_category('espectaculos')) : ?>
+			<h2 class="block-espectaculos separacion-top mb-40">ESPECTÁCULOS</h2>
+		<?php elseif (in_category('deportes')) : ?>
+			<h2 class="block-deportes separacion-top mb-40">DEPORTES</h2>
+		<?php elseif (in_category('sucesos')) : ?>
+			<h2 class="block-sucesos separacion-top mb-40">SUCESOS</h2>
+		<?php elseif (in_category('ciencia-y-tecnologia')) : ?>
+			<h2 class="block-ciencia separacion-top mb-40">CIENCIA Y TECNOLOGÍA</h2>
+		<?php elseif (in_category('nacionales')) : ?>
+			<h2 class="block-nacionales separacion-top mb-40">NACIONALES</h2>
+		<?php elseif (in_category('internacionales')) : ?>
+			<h2 class="block-inter separacion-top mb-40">INTERNACIONALES</h2>
+			<?php else : ?>
+			<p>This is some generic text to describe all other category pages,
+			I could be left blank</p>
+			<?php endif; ?>
 				<?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
 					<?php $post_views = get_post_views(get_the_ID());?>
 					<article class="">
 						<?php $post_thumbnail_id = get_post_thumbnail_id( $post_id );
 						$url = wp_get_attachment_url( $post_thumbnail_id);
 						?>
-
-						<?php the_category(); ?>
-
 						<div class="img-post separacion" style="background-image:url(<?php echo $url; ?>);">
 							<div class="title-post"><h1><?php the_title(); ?></h1></div>
 						</div>
 						<div class="atributes-post" style="padding-top: 2em;">
-							<p><i class="fa fa-calendar-o"></i><?php the_time( get_option('date_format') ); ?></p> <p><i class="fa fa-user"></i> <?php the_author(); ?></p> <?php if (the_tags) : ?><p><i class="fa fa-bookmark-o"></i> <?php the_tags(); ?></p><?php endif; ?>
+							<p><i class="fa fa-calendar-o"></i><?php the_time( get_option('date_format') ); ?></p><?php if (in_category('opinion')) : ?><p><i class="fa fa-user"></i> <?php the_author(); ?></p> <?php endif; ?> <?php if (has_tag('')) : ?><p><i class="fa fa-bookmark-o"></i> <?php the_tags(); ?></p><?php endif; ?>
 						</div>
 
 						<div class="post-content">
@@ -40,6 +57,7 @@
 
 		<?php endwhile; endif; ?>
 	</section><!-- /#main-content -->
+	<?php if (in_category('opinion')) : ?>
 	<section class="separacion main-contento">
 		<div class="author-info">
 			<div class="thumbnail-author">
@@ -75,6 +93,7 @@
 			</div>
 		</div>
 	</section>
+<?php endif ?>
 	<section class="separacion main-contento">
 		<div class="relacionadas">
 			<h3>NOTICIAS RELACIONADAS</h3>

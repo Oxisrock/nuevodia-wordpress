@@ -1,3 +1,130 @@
+/*Movil*/
+@media only screen and (max-width: 767px) {
+  .slider-img {
+    height: 300px!important;
+  }
+  /*Section completa de las noticias en el home*/
+  .section {
+    width: 100%!important;
+  }
+  /*section de falcon*/
+  .section-falcon-one
+  {
+    width: 100%!important;
+  }
+  .section-falcon-one figure {
+    padding: 0!important;
+  }
+  /*seccion de sucesos*/
+  .section-sucesos-one {
+    width: 100%!important;
+  }
+  .effect-marley {
+    width: 100%!important;
+  }
+  /*seccion de nacionales*/
+  .section-nacionales-one {
+    width: 100%!important;
+  }
+  /*seccion de espectaculos*/
+  .esp {
+    display: block!important;
+  }
+  /*seccion de espectaculos*/
+  .esp .bd-espectaculos {
+    margin-right: 0!important;
+    margin-bottom: 2em!important;
+  }
+  .bd-espectaculos {
+    width: 100%!important;
+  }
+  .img-post-espectaculos {
+    height: 300px!important;
+  }
+  /*seccion de cienciaytec*/
+  .esp .bd-ciencia {
+    margin-left: 0!important;
+    margin-bottom: 2em!important;
+  }
+  .bd-ciencia {
+    width: 100%!important;
+  }
+  .img-post-ciencia {
+    height: 300px!important;
+  }
+  /*Entrada*/
+  /*Vista de la entrada*/
+  .post section article .img-post {
+    height: 400px!important;
+  }
+  .atributes-post p {
+    font-size: 2em!important;
+  }
+  .post-content .western, .post-content p {
+    font-size: 2em!important;
+  }
+  /*Card de Author*/
+  .author-info {
+    height: 400px!important;
+  }
+  .thumbnail-author {
+    width: 40%!important;
+  }
+  .description-author {
+    width: 60%!important;
+  }
+  .description-author h3 {
+    font-size: 3em!important;
+  }
+  .description-author p {
+    font-size: 2em!important;
+  }
+  .description-author p {
+    font-size: 2em!important;
+  }
+  .author-social {
+    font-size: 2em!important;
+  }
+  /*Entradas relacionadas*/
+  .relacionadas h3 {
+    font-size: 3em!important;
+  }
+  .post-relations .post-relationship {
+    width: 100%!important;
+  }
+  .relacionadas .post-relationship-content {
+    font-size: 2em!important;
+    margin-bottom: 4em!important;
+  }
+  /*categorias*/
+  .post-relationship img {
+    height: 400px!important;
+  }
+  .category .post-relationship {
+    width: 100%!important;
+  }
+  .category .post-relationship {
+    width: 100%!important;
+  }
+  .category .post-relationship-content p , .category .post-relationship-content .titlelast {
+    font-size: 2em!important;
+  }
+  .category .post-relationship-content{
+    margin-bottom: 4em!important;
+  }
+  /*Vista del post*/
+  .post {
+    width: 100%!important;
+  }
+  /*Vista de categorias*/
+  .category-one {
+    width: 100%!important;
+  }
+  /*Vista de author*/
+  .author {
+    width: 100%!important;
+  }
+}
 /*Empezando responsive en tablet*/
 /*Tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -84,12 +211,5 @@
   /*Vista de author*/
   .author {
     width: 100%!important;
-  }
-}
-
-/*Movil*/
-@media (max-width: 767px) {
-  .container {
-      width: 100%!important;
   }
 }

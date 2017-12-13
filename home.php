@@ -208,7 +208,7 @@
                       ?>
                       <div class="img-post-inter" style="background-image:url(<?php echo $url; ?>);"></div>
                       </a>
-                      <h4 class="text-left"><?php the_title(); ?></h4>
+                      <h4 class="text-left titlelast"><?php the_title(); ?></h4>
                       <p class="text-left"><?php the_time( get_option('date_format') ); ?></p>
                     </div>
                   </div>
@@ -370,7 +370,7 @@
                       ?>
                       <div class="img-post-opinion" style="background-image:url(<?php echo $url; ?>);"></div>
                     </a>
-                      <h4 class="text-left"><?php the_title(); ?></h4>
+                      <h4 class="text-left titlelast"><?php the_title(); ?></h4>
                       <p class="text-left"><?php the_time( get_option('date_format') ); ?></p>
                       <a class="text-left" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><i class="fa fa-user-o"></i> <?php the_author(); ?> </a>
                     </div>

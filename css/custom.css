@@ -118,11 +118,20 @@
 .bd-inter {
   border: 2px solid #3a7521;
 }
+.bd-espectaculos .block-espectaculos:before {
+  background-color: #ef2769;
+  content: '';
+  height: 10px;
+  width: 40%;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+}
 .block-espectaculos:before {
   background-color: #ef2769;
   content: '';
   height: 10px;
-  width: 50%;
+  width: 20%;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -130,6 +139,15 @@
 .bd-espectaculos {
   border: 2px solid #ef2769;
   width: 50%!important;
+}
+.bd-ciencia .block-ciencia:before {
+  background-color: #222;
+  content: '';
+  height: 10px;
+  width: 40%;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
 }
 .block-ciencia:before {
   background-color: #222;
@@ -505,7 +523,7 @@ footer .single-sidebar h3:before, .single-widget h3:before {
 }
 
 .logos_footer {
-  display: flex;
+  display: flex!important;
   justify-content: center!important;
   margin-top: 1em!important;
   margin-bottom: 1em!important;

@@ -8,7 +8,7 @@
   </div>
   <?php $counts = 1;?>
   <div class="one-post-author separacion">
-    <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
+    <?php while( have_posts() ) : the_post(); ?>
       <?php $post_views = get_post_views(get_the_ID());?>
       <?php if ($counts <= 1): ?>
         <?php $counts++; ?>
@@ -32,7 +32,7 @@
           </div>
         </article>	<!-- article -->
       <?php endif; ?>
-    <?php endwhile; endif; ?>
+    <?php endwhile;?>
   </div>
   <?php rewind_posts(); ?>
   <div class="bottom-author">
