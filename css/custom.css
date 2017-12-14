@@ -190,7 +190,6 @@
 .section-opinion
 {
   display: flex!important;
-  padding: 1em!important;
 }
 .section-opinion-post {
   align-content: space-between!important;
@@ -223,7 +222,6 @@
 .section-inter
 {
   display: flex!important;
-  padding: 1em!important;
 }
 .section-inter-post {
   align-content: space-between!important;
@@ -563,7 +561,8 @@ align-content: space-between!important;
 .section-falcon-one {
   width: 50%!important;
   height: 300px!important;
-  margin-left: 2em!important;
+  margin-left: 1em!important;
+}
 }
 .section-falcon-one figure {
   width: 100%!important;
@@ -584,14 +583,12 @@ align-content: space-between!important;
 .section-sucesos-one {
   width: 50%!important;
   height: 300px!important;
-  padding: 2.5%!important;
   margin-bottom: 2em!important;
   margin-left: 1em!important;
 }
 .section-sucesos-two {
   width: 50%!important;
   height: 300px!important;
-  padding: 2.5%!important;
   margin-right: 1em!important;
 }
 .section-nacionales {
@@ -600,14 +597,12 @@ align-content: space-between!important;
 .section-nacionales-one {
   width: 50%!important;
   height: 300px!important;
-  padding: 2.5%!important;
   margin-bottom: 2em!important;
   margin-left: 1em!important;
 }
 .section-nacionales-two {
   width: 50%!important;
   height: 300px!important;
-  padding: 2.5%!important;
   margin-right: 1em!important;
 }
 /*Deportes*/
@@ -617,14 +612,12 @@ align-content: space-between!important;
 .section-deportes-one {
   width: 50%!important;
   height: 300px!important;
-  padding: 2.5%!important;
   margin-bottom: 2em!important;
   margin-left: 1em!important;
 }
 .section-deportes-two {
   width: 50%!important;
   height: 300px!important;
-  padding: 2.5%!important;
   margin-right: 1em!important;
 }
 .sidebar-widgets {
@@ -642,10 +635,15 @@ align-content: space-between!important;
   width: 50%!important;
   padding-left:1em!important;
 }
-.sm-post-item {
+.section-falcon-two .sm-post-item {
+  margin-bottom: 1.5em!important;
+}
+.section-sucesos-two .sm-post-item {
   margin-bottom: 2em!important;
 }
-
+.section-nacionales-two .sm-post-item {
+  margin-bottom: 2em!important;
+}
 
 
 
@@ -849,22 +847,21 @@ align-content: space-between!important;
   height: 200px!important;
 }
 .thumbnail-author {
-  width: 30%!important;
+  width: 20%!important;
 }
 .thumbnail-author img {
   width: 100%!important;
   padding: 0.5em!important;
   border: 1px solid #e6e6e6!important;
-  height: 100%!important;
+  height: 70%!important;
 }
 .description-author {
-  width: 70%!important;
+  width: 80%!important;
   padding: 0.5em!important;
   height: 100%!important;
 }
 .author-social {
-  width: 80%!important;
-  margin-bottom: 1em!important;
+  width: 100%!important;
 }
 .dc-social {
   text-align: justify!important;
@@ -881,7 +878,7 @@ align-content: space-between!important;
 /*Logo*/
 #logo
 {
-  width: 35%!important;
+  margin-bottom: 2em!important;
 }
 
 /*Vista de categorias*/
@@ -997,4 +994,14 @@ align-content: space-between!important;
 }
 p {
   margin: 0!important;
+}
+.mg-fecha {
+  margin-left: 30px!important;
+}
+.title-mayus {
+  text-transform: uppercase!important;
+}
+/**/
+.post-relationship-content .titlelast {
+  font-weight: 600!important;
 }

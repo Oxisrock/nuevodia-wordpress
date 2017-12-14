@@ -6,23 +6,22 @@
 	<div class="container-post">
 		<div class="post">
 			<section class="separacion main-contento">
-
 				<?php if (in_category('opinion')) : ?>
-			<h2 class="block-opinion mb-40">OPINIóN</h2>
+			<a href="/wp_nuevodia/index.php/category/opinion"><h2 class="block-opinion mb-40">OPINIóN</h2></a>
 		<?php elseif (in_category('falcon')) : ?>
-			<h2 class="block-falcon mb-20">FALCÓN</h2>
+			<a href="/wp_nuevodia/index.php/category/falcon/"><h2 class="block-falcon mb-20">FALCÓN</h2></a>
 		<?php elseif (in_category('espectaculos')) : ?>
-			<h2 class="block-espectaculos mb-40">ESPECTÁCULOS</h2>
+			<a href="/wp_nuevodia/index.php/category/espectaculos"><h2 class="block-espectaculos mb-40">ESPECTÁCULOS</h2></a>
 		<?php elseif (in_category('deportes')) : ?>
-			<h2 class="block-deportes mb-40">DEPORTES</h2>
+			<a href="/wp_nuevodia/index.php/category/deportes"><h2 class="block-deportes mb-40">DEPORTES</h2></a>
 		<?php elseif (in_category('sucesos')) : ?>
-			<h2 class="block-sucesos mb-40">SUCESOS</h2>
+			<a href="/wp_nuevodia/index.php/category/sucesos"><h2 class="block-sucesos mb-40">SUCESOS</h2></a>
 		<?php elseif (in_category('ciencia-y-tecnologia')) : ?>
-			<h2 class="block-ciencia mb-40">CIENCIA Y TECNOLOGÍA</h2>
+			<a href="/wp_nuevodia/index.php/category/ciencia-y-tecnologia"><h2 class="block-ciencia mb-40">CIENCIA Y TECNOLOGÍA</h2></a>
 		<?php elseif (in_category('nacionales')) : ?>
-			<h2 class="block-nacionales mb-40">NACIONALES</h2>
+			<a href="/wp_nuevodia/index.php/category/nacionales"><h2 class="block-nacionales mb-40">NACIONALES</h2></a>
 		<?php elseif (in_category('internacionales')) : ?>
-			<h2 class="block-inter mb-40">INTERNACIONALES</h2>
+			<a href="/wp_nuevodia/index.php/category/internacionales"><h2 class="block-inter mb-40">INTERNACIONALES</h2></a>
 			<?php else : ?>
 			<p>This is some generic text to describe all other category pages,
 			I could be left blank</p>
@@ -64,10 +63,6 @@
 				<?php echo get_avatar( get_the_author_meta('email'), '80' ); ?>
 				<div class="thumbnail-author-img" style="background: url(<?php echo get_avatar( get_the_author_meta('email'), '80' ); ?>)">
 				</div>
-		</div>
-			<div class="description-author">
-				<h3><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></h3>
-				<p><?php the_author_meta('description'); ?></p>
 				<div class="author-social text-center">
 				<!-- <?php echo get_avatar( get_the_author_meta('email'), '80' ); ?> -->
 				<?php
@@ -90,6 +85,10 @@
 	                }
 	                ?>
 			</div>
+		</div>
+			<div class="description-author">
+				<h3><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></h3>
+				<p><?php the_author_meta('description'); ?></p>
 			</div>
 		</div>
 	</section>
@@ -104,7 +103,7 @@
 				if( $related ) foreach( $related as $post ) {
 					setup_postdata($post); ?>
 					<div class="post-relationship">
-						<a target="_blank" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+						<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
 							<?php if ( has_post_thumbnail() ) {
 								the_post_thumbnail();
 							}else{

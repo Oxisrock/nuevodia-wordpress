@@ -66,12 +66,12 @@ I could be left blank</p>
             $url = wp_get_attachment_url( $post_thumbnail_id);
             ?>
               <div class="post-relationship">
-                <a target="_blank" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+                <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
                   <?php if ( has_post_thumbnail() ) {
                     the_post_thumbnail();
                   }else{
                     ?>
-                    <a target="_blank" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/nombre-imagen-defecto.png" /></a>
+                    <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/nombre-imagen-defecto.png" /></a>
                     <?php
                   }
                   ?>
@@ -95,12 +95,12 @@ I could be left blank</p>
           $url = wp_get_attachment_url( $post_thumbnail_id);
           ?>
             <div class="post-relationship">
-              <a target="_blank" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+              <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
                 <?php if ( has_post_thumbnail() ) {
                   the_post_thumbnail();
                 }else{
                   ?>
-                  <a target="_blank" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/nombre-imagen-defecto.png" /></a>
+                  <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/nombre-imagen-defecto.png" /></a>
                   <?php
                 }
                 ?>
@@ -124,12 +124,12 @@ I could be left blank</p>
         $url = wp_get_attachment_url( $post_thumbnail_id);
         ?>
           <div class="post-relationship">
-            <a target="_blank" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
+            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
               <?php if ( has_post_thumbnail() ) {
                 the_post_thumbnail();
               }else{
                 ?>
-                <a target="_blank" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/nombre-imagen-defecto.png" /></a>
+                <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/nombre-imagen-defecto.png" /></a>
                 <?php
               }
               ?>

@@ -8,11 +8,11 @@
 
 <body>
 
-	<!-- <div id='preloader' >
+	<div id='preloader' >
 			<div class='loader' >
-					<img src="wp-content/themes/tema_prueba/img/loading.gif" width="200" alt="">
+					<img src="<?php echo get_bloginfo('template_url') ?>/img/loading.gif" width="200" alt="">
 			</div>
-	</div> -->
+	</div>
 <div>
 	<div class="news-ticker-wrap visible-md visible-lg">
 		 <span class="ticker-title tt-u">Lo último</span>
@@ -40,7 +40,6 @@
                   <div class="col-xs-6 xs-padding xs-text-center">
                       <p class="no-margin fz-13 text-light"></p>
                   </div>
-									<br>
 									<div class="col-xs-12 xs-padding visible-md visible-lg">
 											<ul class="footer-social text-center xs-text-center">
 													<li><a href="#"><i class="fa fa-facebook fa-3x"></i></a></li>

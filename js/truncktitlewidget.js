@@ -1,5 +1,5 @@
 
-var minLen = 50;
+var minLen = 45;
 var titleslast = jQuery ('.titlelast')
 for (x in titleslast) {
   if(titleslast[x].innerHTML.length > minLen) {

@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<br>
 <div class="main-content ov-hidden">
   <div class="container">
     <div class="slider-nav">
@@ -26,7 +25,7 @@
                     </div>
                     <!-- <p style="color: #000; font-size: 6em;"><?= $category->name ?></p> -->
                     <div class="picture-caption-fixed">
-                      <h2 class="margin-top-5 margin-bottom-5 font-weight-200"><?php the_title(); ?></h2>
+                      <h2 class="margin-top-5 margin-bottom-5 font-weight-200 titleslider"><?php the_title(); ?></h2>
                     </div>
                     <!-- <p style="color: #000;"><?php the_time( get_option('date_format') ); ?> </p> -->
                   </a>
@@ -47,9 +46,9 @@
     </div>
     <div class="home">
       <div class="section sm-padding">
-        <section id="main-content" class="main-wrapper mb-20">
+        <section id="main-content" class="main-wrapper">
           <div class="news-block padding-15 bg-white bd-falcon separacion">
-            <h2 class="block-falcon mb-20">FALCÓN</h2>
+            <a href="/wp_nuevodia/index.php/category/falcon/"><h2 class="block-falcon mb-20">FALCÓN</h2></a>
             <?php query_posts('category_name=falcon&showposts=3'); ?>
             <?php $count = 1;?>
             <div class="section-falcon">
@@ -60,7 +59,7 @@
                       <figure class="effect-marley">
                         <?php the_post_thumbnail(); ?>
                         <figcaption>
-                          <h2 class="text-left"><?php the_title(); ?></h2>
+                          <h2 class="text-left title"><?php the_title(); ?></h2>
                           <h3 class="text-left"><?php the_time( get_option('date_format') ); ?></h3>
                           <p class="text-left"><?php the_excerpt(); ?></p>
                           <a href="<?php the_permalink(); ?>">Ver mas</a>
@@ -76,8 +75,8 @@
                         <figure class="effect-marley-mini">
                           <?php the_post_thumbnail(); ?>
                           <figcaption>
-                            <h2 class="text-left"><?php the_title(); ?></h2>
-                            <p class="text-left"><?php the_time( get_option('date_format') ); ?></p>
+                            <h2 class="text-left title"><?php the_title(); ?></h2>
+                            <p class="text-left mg-fecha"><?php the_time( get_option('date_format') ); ?></p>
                             <a href="<?php the_permalink(); ?>">Ver mas</a>
                           </figcaption>
                         </figure>
@@ -92,7 +91,7 @@
             <?php if ( function_exists( 'easingslider' ) ) { easingslider( 183 ); } ?>
           </div>
           <div class="news-block padding-15 bg-white bd-sucesos separacion">
-            <h2 class="block-sucesos mb-20">Sucesos</h2>
+            <a href="/wp_nuevodia/index.php/category/sucesos"><h2 class="block-sucesos mb-20">Sucesos</h2></a>
             <?php query_posts('category_name=sucesos&showposts=4'); ?>
             <?php $count = 1;?>
             <div class="section-sucesos">
@@ -103,7 +102,7 @@
                       <figure class="effect-marley">
                         <?php the_post_thumbnail(); ?>
                         <figcaption>
-                          <h2 class="text-left"><?php the_title(); ?></h2>
+                          <h2 class="text-left title"><?php the_title(); ?></h2>
                           <h3 class="text-left"><?php the_time( get_option('date_format') ); ?></h3>
                           <p class="text-left"><?php the_excerpt(); ?></p>
                           <a href="<?php the_permalink(); ?>">Ver mas</a>
@@ -143,7 +142,7 @@
           </div>
           <!-- .Mini-banner-ads -->
           <div class="news-block padding-15 bg-white bd-nacionales separacion">
-            <h2 class="block-nacionales mb-20">NACIONALES</h2>
+            <a href="/wp_nuevodia/index.php/category/nacionales"><h2 class="block-nacionales mb-20">NACIONALES</h2></a>
             <?php query_posts('category_name=nacionales&showposts=4'); ?>
             <?php $count = 1;?>
             <div class="section-nacionales">
@@ -154,7 +153,7 @@
                       <figure class="effect-marley">
                         <?php the_post_thumbnail(); ?>
                         <figcaption>
-                          <h2 class="text-left"><?php the_title(); ?></h2>
+                          <h2 class="text-left title"><?php the_title(); ?></h2>
                           <h3 class="text-left"><?php the_time( get_option('date_format') ); ?></h3>
                           <p class="text-left"><?php the_excerpt(); ?></p>
                           <a href="<?php the_permalink(); ?>">Ver mas</a>
@@ -195,7 +194,7 @@
                 <i class="fa fa-chevron-left fa-2x"></i>
               </a>
             </div>
-            <h2 class="block-inter mb-40">INTERNACIONALES</h2>
+            <a href="/wp_nuevodia/index.php/category/internacionales"><h2 class="block-inter mb-20">INTERNACIONALES</h2></a>
             <?php query_posts('category_name=internacionales&showposts=6'); ?>
             <div class="slider_post_inter section-inter">
               <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
@@ -230,7 +229,7 @@
           </div>
           <!-- .Mini-banner-ads -->
             <div class="news-block padding-15 bg-white bd-deportes separacion">
-              <h2 class="block-deportes mb-20">DEPORTES</h2>
+              <a href="/wp_nuevodia/index.php/category/deportes"><h2 class="block-deportes mb-20">DEPORTES</h2></a>
               <?php query_posts('category_name=deportes&showposts=3'); ?>
               <?php $count = 1;?>
               <div class="section-falcon">
@@ -241,7 +240,7 @@
                         <figure class="effect-marley">
                           <?php the_post_thumbnail(); ?>
                           <figcaption>
-                            <h2 class="text-left"><?php the_title(); ?></h2>
+                            <h2 class="text-left title"><?php the_title(); ?></h2>
                             <h3 class="text-left"><?php the_time( get_option('date_format') ); ?></h3>
                             <p class="text-left"><?php the_excerpt(); ?></p>
                             <a href="<?php the_permalink(); ?>">Ver mas</a>
@@ -257,8 +256,8 @@
                           <figure class="effect-marley-mini">
                             <?php the_post_thumbnail(); ?>
                             <figcaption>
-                              <h2 class="text-left"><?php the_title(); ?></h2>
-                              <p class="text-left"><?php the_time( get_option('date_format') ); ?></p>
+                              <h2 class="text-left title"><?php the_title(); ?></h2>
+                              <p class="text-left mg-fecha"><?php the_time( get_option('date_format') ); ?></p>
                               <a href="<?php the_permalink(); ?>">Ver mas</a>
                             </figcaption>
                           </figure>
@@ -274,7 +273,7 @@
           </div>
           <div class="esp separacion">
             <div class="news-block bd-espectaculos padding-15 ml-5">
-              <h2 class="block-espectaculos mb-40">ESPECTÁCULOS</h2>
+              <a href="/wp_nuevodia/index.php/category/espectaculos"><h2 class="block-espectaculos mb-40">ESPECTÁCULOS</h2></a>
               <?php $count = 1;?>
               <?php query_posts('category_name=espectaculos&showposts=3'); ?>
               <div class="three-col-post">
@@ -304,7 +303,7 @@
               </div>
             </div>
             <div class="news-block bd-ciencia padding-15 md-5">
-              <h2 class="block-ciencia mb-40">CIENCIA Y TECNOLOGÍA</h2>
+              <a href="/wp_nuevodia/index.php/category/ciencia-y-tecnologia"><h2 class="block-ciencia mb-40">CIENCIA Y TECNOLOGÍA</h2></a>
               <?php $count = 1;?>
               <?php query_posts('category_name=ciencia-y-tecnologia&showposts=3'); ?>
               <div class="three-col-post">
@@ -317,12 +316,12 @@
                           $url = wp_get_attachment_url( $post_thumbnail_id);
                           ?>
                           <div class="img-post-ciencia" style="background-image: url(<?php echo $url ?>);"></div>
-                          <h4><?php the_title(); ?></h4>
+                          <h4 class="title"><?php the_title(); ?></h4>
                           <p><?php the_time( get_option('date_format') ); ?></p>
                           <?php $count++; ?>
                         <?php else : ?>
                           <div class="visible-md visible-lg">
-                          <h4 class="text-left"><?php the_title(); ?></h4>
+                          <h4 class="text-left title"><?php the_title(); ?></h4>
                           <p class="text-left" ><?php the_time( get_option('date_format') ); ?></p>
                         </div>
                         <?php endif; ?>
@@ -357,7 +356,7 @@
                 <i class="fa fa-chevron-left fa-2x"></i>
               </a>
             </div>
-            <h2 class="block-opinion mb-40">OPINIóN</h2>
+            <a href="/wp_nuevodia/index.php/category/opinion"><h2 class="block-opinion mb-20">OPINIóN</h2></a>
             <?php query_posts('category_name=opinion&showposts=6'); ?>
             <div class="slider_post section-opinion">
               <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>

@@ -51,7 +51,7 @@
               </div><!-- widget 2 -->
             </div>
             <div class="logos_footer visible-md visible-lg">
-              <img src="http://localhost/nuevodia/wp-content/uploads/2017/11/client-1.png" class="img-responsive letraviva"><img src="http://localhost/nuevodia/wp-content/uploads/2017/11/client-2.png" class="img-responsive fundacion">
+              <img src="<?php echo get_bloginfo('template_url') ?>/img/client-1.png" class="img-responsive letraviva"><img src="<?php echo get_bloginfo('template_url') ?>/img/client-2.png" class="img-responsive fundacion">
             </div>
             <div class="derechos">
               <a class="text-light">© Derechos Reservados EDITORIAL NUEVO DÍA C.A.Desarrollado por Slice Group </a>
