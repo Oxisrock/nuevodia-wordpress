@@ -8,21 +8,21 @@
 			<section class="separacion main-contento">
 
 				<?php if (in_category('opinion')) : ?>
-			<h2 class="block-opinion separacion-top mb-40">OPINIóN</h2>
+			<h2 class="block-opinion mb-40">OPINIóN</h2>
 		<?php elseif (in_category('falcon')) : ?>
-			<h2 class="block-falcon separacion-top mb-20">FALCÓN</h2>
+			<h2 class="block-falcon mb-20">FALCÓN</h2>
 		<?php elseif (in_category('espectaculos')) : ?>
-			<h2 class="block-espectaculos separacion-top mb-40">ESPECTÁCULOS</h2>
+			<h2 class="block-espectaculos mb-40">ESPECTÁCULOS</h2>
 		<?php elseif (in_category('deportes')) : ?>
-			<h2 class="block-deportes separacion-top mb-40">DEPORTES</h2>
+			<h2 class="block-deportes mb-40">DEPORTES</h2>
 		<?php elseif (in_category('sucesos')) : ?>
-			<h2 class="block-sucesos separacion-top mb-40">SUCESOS</h2>
+			<h2 class="block-sucesos mb-40">SUCESOS</h2>
 		<?php elseif (in_category('ciencia-y-tecnologia')) : ?>
-			<h2 class="block-ciencia separacion-top mb-40">CIENCIA Y TECNOLOGÍA</h2>
+			<h2 class="block-ciencia mb-40">CIENCIA Y TECNOLOGÍA</h2>
 		<?php elseif (in_category('nacionales')) : ?>
-			<h2 class="block-nacionales separacion-top mb-40">NACIONALES</h2>
+			<h2 class="block-nacionales mb-40">NACIONALES</h2>
 		<?php elseif (in_category('internacionales')) : ?>
-			<h2 class="block-inter separacion-top mb-40">INTERNACIONALES</h2>
+			<h2 class="block-inter mb-40">INTERNACIONALES</h2>
 			<?php else : ?>
 			<p>This is some generic text to describe all other category pages,
 			I could be left blank</p>
@@ -37,7 +37,7 @@
 							<div class="title-post"><h1><?php the_title(); ?></h1></div>
 						</div>
 						<div class="atributes-post" style="padding-top: 2em;">
-							<p><i class="fa fa-calendar-o"></i><?php the_time( get_option('date_format') ); ?></p><?php if (in_category('opinion')) : ?><p><i class="fa fa-user"></i> <?php the_author(); ?></p> <?php endif; ?> <?php if (has_tag('')) : ?><p><i class="fa fa-bookmark-o"></i> <?php the_tags(); ?></p><?php endif; ?>
+							<p><?php the_time( get_option('date_format') ); ?></p><?php if (in_category('opinion')) : ?><p><i class="fa fa-user"></i> <?php the_author(); ?></p> <?php endif; ?> <?php if (has_tag('')) : ?><p><i class="fa fa-bookmark-o"></i> <?php the_tags(); ?></p><?php endif; ?>
 						</div>
 
 						<div class="post-content">

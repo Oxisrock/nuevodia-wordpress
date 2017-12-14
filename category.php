@@ -4,21 +4,21 @@
     <?php if ( function_exists( 'easingslider' ) ) { easingslider( 180 ); } ?>
   </div>
   <?php if (is_category('opinion')) : ?>
-<h2 class="block-opinion separacion-top mb-40">OPINIóN</h2>
+<h2 class="block-opinion mb-40">OPINIóN</h2>
 <?php elseif (is_category('falcon')) : ?>
-<h2 class="block-falcon separacion-top mb-20">FALCÓN</h2>
+<h2 class="block-falcon mb-20">FALCÓN</h2>
 <?php elseif (is_category('espectaculos')) : ?>
-<h2 class="block-espectaculos separacion-top mb-40">ESPECTÁCULOS</h2>
+<h2 class="block-espectaculos mb-40">ESPECTÁCULOS</h2>
 <?php elseif (is_category('deportes')) : ?>
-<h2 class="block-deportes separacion-top mb-40">DEPORTES</h2>
+<h2 class="block-deportes mb-40">DEPORTES</h2>
 <?php elseif (is_category('sucesos')) : ?>
-<h2 class="block-sucesos separacion-top mb-40">SUCESOS</h2>
+<h2 class="block-sucesos mb-40">SUCESOS</h2>
 <?php elseif (is_category('ciencia-y-tecnologia')) : ?>
-<h2 class="block-ciencia separacion-top mb-40">CIENCIA Y TECNOLOGÍA</h2>
+<h2 class="block-ciencia mb-40">CIENCIA Y TECNOLOGÍA</h2>
 <?php elseif (is_category('nacionales')) : ?>
-<h2 class="block-nacionales separacion-top mb-40">NACIONALES</h2>
+<h2 class="block-nacionales mb-40">NACIONALES</h2>
 <?php elseif (is_category('internacionales')) : ?>
-<h2 class="block-inter separacion-top mb-40">INTERNACIONALES</h2>
+<h2 class="block-inter mb-40">INTERNACIONALES</h2>
 <?php else : ?>
 <p>This is some generic text to describe all other category pages,
 I could be left blank</p>

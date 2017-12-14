@@ -995,3 +995,6 @@ align-content: space-between!important;
 .grid figure figcaption > a {
   z-index: 0!important;
 }
+p {
+  margin: 0!important;
+}
